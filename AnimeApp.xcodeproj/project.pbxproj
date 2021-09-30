@@ -58,6 +58,7 @@
 		8D9316DF27065B150074922A /* AnimeApp */ = {
 			isa = PBXGroup;
 			children = (
+				8D9316FE27065C750074922A /* StoryBoard */,
 				8D9316FD27065C040074922A /* Extensions */,
 				8D9316FC27065BFB0074922A /* Services */,
 				8D9316FB27065BEC0074922A /* Observable */,
@@ -68,9 +69,7 @@
 				8D9316E027065B150074922A /* AppDelegate.swift */,
 				8D9316E227065B150074922A /* SceneDelegate.swift */,
 				8D9316E427065B150074922A /* ViewController.swift */,
-				8D9316E627065B150074922A /* Main.storyboard */,
 				8D9316EC27065B180074922A /* Assets.xcassets */,
-				8D9316EE27065B180074922A /* LaunchScreen.storyboard */,
 				8D9316F127065B180074922A /* Info.plist */,
 				8D9316E927065B150074922A /* AnimeApp.xcdatamodeld */,
 			);
@@ -124,6 +123,15 @@
 			children = (
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		8D9316FE27065C750074922A /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				8D9316EE27065B180074922A /* LaunchScreen.storyboard */,
+				8D9316E627065B150074922A /* Main.storyboard */,
+			);
+			path = StoryBoard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
