@@ -9,6 +9,13 @@ import UIKit
 
 class TopAnimesCollectionViewCell: UICollectionViewCell {
     
+    @IBOutlet weak var imageViewTopAnimes: UIImageView!
     
+    @IBOutlet weak var TextLbl: UILabel!
+    
+    
+    func setupTopAnimes(topAnimes: Top) {
+            
+    }
     
 }
