@@ -13,7 +13,7 @@ class TopStoriesViewController: UIViewController, UISearchBarDelegate {
     
 //    MARK: - Variables Global
         var topStories = [TopStoriesViewModel]()
-    
+        var bookList : BookListsViewModel?
     //   MARK: - SearchBar Message to the data not appareance
         fileprivate let searchController = UISearchController(searchResultsController: nil)
         fileprivate let enterSearchTermLabel: UILabel = {
@@ -27,6 +27,7 @@ class TopStoriesViewController: UIViewController, UISearchBarDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         fetchResponse()
+        fetchListBooks()
         
     }
     
@@ -44,8 +45,20 @@ class TopStoriesViewController: UIViewController, UISearchBarDelegate {
             
             self.topStories = resp.map({return TopStoriesViewModel(top: $0)})
 
-            self.topStories.forEach{print($0)}
+//            self.topStories.forEach{print($0)}
+            
 
+            
+        }
+    }
+    
+    func fetchListBooks() {
+        NetworkServicesModel.shared.fetchListBooks { resp, error in
+          
+            self.bookList = resp.map({ return BookListsViewModel(book: $0)})
+           
+        
+    
             
         }
     }
