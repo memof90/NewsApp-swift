@@ -93,7 +93,8 @@
 		8D9316F727065B5F0074922A /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				8D93170B270671B70074922A /* Top.swift */,
+				8DF18160270CC23600E20C53 /* Top */,
+				8DF1815E270CC20700E20C53 /* Books */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -172,6 +173,21 @@
 				8D93171427067C4B0074922A /* TopStoriesViewModel.swift */,
 			);
 			path = TopAnimates;
+			sourceTree = "<group>";
+		};
+		8DF1815E270CC20700E20C53 /* Books */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Books;
+			sourceTree = "<group>";
+		};
+		8DF18160270CC23600E20C53 /* Top */ = {
+			isa = PBXGroup;
+			children = (
+				8D93170B270671B70074922A /* Top.swift */,
+			);
+			path = Top;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
