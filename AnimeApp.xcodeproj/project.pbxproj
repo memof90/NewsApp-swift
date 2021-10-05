@@ -13,13 +13,15 @@
 		8D9316EB27065B150074922A /* AnimeApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8D9316E927065B150074922A /* AnimeApp.xcdatamodeld */; };
 		8D9316ED27065B180074922A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D9316EC27065B180074922A /* Assets.xcassets */; };
 		8D9316F027065B180074922A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D9316EE27065B180074922A /* LaunchScreen.storyboard */; };
-		8D93170027065EC10074922A /* AnimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9316FF27065EC10074922A /* AnimeViewController.swift */; };
-		8D93170427066C680074922A /* TopAnimesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D93170227066C680074922A /* TopAnimesCollectionViewCell.swift */; };
-		8D93170527066C680074922A /* TopAnimesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D93170327066C680074922A /* TopAnimesCollectionViewCell.xib */; };
+		8D93170027065EC10074922A /* TopStoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9316FF27065EC10074922A /* TopStoriesViewController.swift */; };
+		8D93170427066C680074922A /* TopStoriesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D93170227066C680074922A /* TopStoriesCollectionViewCell.swift */; };
+		8D93170527066C680074922A /* TopStoriesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D93170327066C680074922A /* TopStoriesCollectionViewCell.xib */; };
 		8D93170727066CD40074922A /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D93170627066CD40074922A /* UIView+Extension.swift */; };
 		8D93170A27066FF00074922A /* CardViewShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D93170927066FF00074922A /* CardViewShadow.swift */; };
 		8D93170C270671B70074922A /* Top.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D93170B270671B70074922A /* Top.swift */; };
 		8D93170E270678360074922A /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D93170D270678360074922A /* String+Extension.swift */; };
+		8D93171227067B210074922A /* NetworkServicesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D93171127067B210074922A /* NetworkServicesModel.swift */; };
+		8D93171527067C4B0074922A /* TopStoriesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D93171427067C4B0074922A /* TopStoriesViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,13 +33,15 @@
 		8D9316EC27065B180074922A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8D9316EF27065B180074922A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8D9316F127065B180074922A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8D9316FF27065EC10074922A /* AnimeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeViewController.swift; sourceTree = "<group>"; };
-		8D93170227066C680074922A /* TopAnimesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopAnimesCollectionViewCell.swift; sourceTree = "<group>"; };
-		8D93170327066C680074922A /* TopAnimesCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TopAnimesCollectionViewCell.xib; sourceTree = "<group>"; };
+		8D9316FF27065EC10074922A /* TopStoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopStoriesViewController.swift; sourceTree = "<group>"; };
+		8D93170227066C680074922A /* TopStoriesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopStoriesCollectionViewCell.swift; sourceTree = "<group>"; };
+		8D93170327066C680074922A /* TopStoriesCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TopStoriesCollectionViewCell.xib; sourceTree = "<group>"; };
 		8D93170627066CD40074922A /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		8D93170927066FF00074922A /* CardViewShadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewShadow.swift; sourceTree = "<group>"; };
 		8D93170B270671B70074922A /* Top.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Top.swift; sourceTree = "<group>"; };
 		8D93170D270678360074922A /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		8D93171127067B210074922A /* NetworkServicesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServicesModel.swift; sourceTree = "<group>"; };
+		8D93171427067C4B0074922A /* TopStoriesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopStoriesViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,7 +77,6 @@
 				8D9316FE27065C750074922A /* StoryBoard */,
 				8D9316FD27065C040074922A /* Extensions */,
 				8D9316FC27065BFB0074922A /* Services */,
-				8D9316FB27065BEC0074922A /* Observable */,
 				8D9316FA27065B830074922A /* View */,
 				8D9316F927065B6E0074922A /* Controller */,
 				8D9316F827065B650074922A /* ViewModel */,
@@ -98,6 +101,7 @@
 		8D9316F827065B650074922A /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				8D93171327067C160074922A /* TopAnimates */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -105,7 +109,7 @@
 		8D9316F927065B6E0074922A /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				8D9316FF27065EC10074922A /* AnimeViewController.swift */,
+				8D9316FF27065EC10074922A /* TopStoriesViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -119,16 +123,10 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		8D9316FB27065BEC0074922A /* Observable */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Observable;
-			sourceTree = "<group>";
-		};
 		8D9316FC27065BFB0074922A /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				8D93171127067B210074922A /* NetworkServicesModel.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -154,8 +152,8 @@
 		8D93170127066BCA0074922A /* TopAnimesViewCell */ = {
 			isa = PBXGroup;
 			children = (
-				8D93170227066C680074922A /* TopAnimesCollectionViewCell.swift */,
-				8D93170327066C680074922A /* TopAnimesCollectionViewCell.xib */,
+				8D93170227066C680074922A /* TopStoriesCollectionViewCell.swift */,
+				8D93170327066C680074922A /* TopStoriesCollectionViewCell.xib */,
 			);
 			path = TopAnimesViewCell;
 			sourceTree = "<group>";
@@ -166,6 +164,14 @@
 				8D93170927066FF00074922A /* CardViewShadow.swift */,
 			);
 			path = CardViewShadow;
+			sourceTree = "<group>";
+		};
+		8D93171327067C160074922A /* TopAnimates */ = {
+			isa = PBXGroup;
+			children = (
+				8D93171427067C4B0074922A /* TopStoriesViewModel.swift */,
+			);
+			path = TopAnimates;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,7 +235,7 @@
 				8D9316F027065B180074922A /* LaunchScreen.storyboard in Resources */,
 				8D9316ED27065B180074922A /* Assets.xcassets in Resources */,
 				8D9316E827065B150074922A /* Main.storyboard in Resources */,
-				8D93170527066C680074922A /* TopAnimesCollectionViewCell.xib in Resources */,
+				8D93170527066C680074922A /* TopStoriesCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,11 +248,13 @@
 			files = (
 				8D93170727066CD40074922A /* UIView+Extension.swift in Sources */,
 				8D93170E270678360074922A /* String+Extension.swift in Sources */,
+				8D93171527067C4B0074922A /* TopStoriesViewModel.swift in Sources */,
 				8D9316EB27065B150074922A /* AnimeApp.xcdatamodeld in Sources */,
-				8D93170027065EC10074922A /* AnimeViewController.swift in Sources */,
-				8D93170427066C680074922A /* TopAnimesCollectionViewCell.swift in Sources */,
+				8D93170027065EC10074922A /* TopStoriesViewController.swift in Sources */,
+				8D93170427066C680074922A /* TopStoriesCollectionViewCell.swift in Sources */,
 				8D9316E127065B150074922A /* AppDelegate.swift in Sources */,
 				8D9316E327065B150074922A /* SceneDelegate.swift in Sources */,
+				8D93171227067B210074922A /* NetworkServicesModel.swift in Sources */,
 				8D93170A27066FF00074922A /* CardViewShadow.swift in Sources */,
 				8D93170C270671B70074922A /* Top.swift in Sources */,
 			);

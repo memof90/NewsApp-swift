@@ -7,15 +7,15 @@
 
 import UIKit
 
-class TopAnimesCollectionViewCell: UICollectionViewCell {
+class TopStoriesCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var imageViewTopAnimes: UIImageView!
     
     @IBOutlet weak var TextLbl: UILabel!
     
     
-    func setupTopAnimes(topAnimes: Top) {
-            
+    func setupTopAnimes() {
+        
     }
     
 }

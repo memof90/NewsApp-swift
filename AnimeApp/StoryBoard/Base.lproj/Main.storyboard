@@ -12,7 +12,7 @@
         <!--Discover-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="AnimeViewController" customModule="AnimeApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="TopStoriesViewController" customModule="AnimeApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -137,6 +137,9 @@
                         <barButtonItem key="leftBarButtonItem" id="Aag-iJ-bny">
                             <imageReference key="image" image="magnifyingglass" catalog="system" symbolScale="large"/>
                             <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="searchActionBtn:" destination="BYZ-38-t0r" id="r6m-Q3-Flj"/>
+                            </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" id="Ide-c6-cqH">
                             <imageReference key="image" image="person.circle.fill" catalog="system" symbolScale="large"/>

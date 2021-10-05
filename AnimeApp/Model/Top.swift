@@ -7,46 +7,48 @@
 
 import Foundation
 
-struct TopAnimes: Codable {
-    
-    let requestHash : String?
-    let requestCached : Bool?
-    let requestCacheExpiry: Int?
-    let top : [Top]?
-    
-    enum CodingKeys : String , CodingKey {
-        case requestHash = "request_hash"
-        case requestCached = "request_cached"
-        case requestCacheExpiry = "request_cache_expiry"
-        case top
-    }
-}
 
 
-struct Top : Codable {
-    let mailId: Int
-    let rank: Int
-    let title: String
-    let url: String
-    let imageURL: String
-    let type: String
-    let episodes: Int?
-    let startDate: String
-    let endDate: String?
-    let members: Int
-    let score: Double
+struct TopStories: Codable {
+    let status: String
+    let copyright: String
+    let section: String
+    let lastUpdated: String
+    let numResults: Int
+    let results : [Results]
     
     enum CodingKeys: String, CodingKey {
-        case mailId = "mal_id"
-        case rank
-        case title
-        case url
-        case imageURL = "image_url"
-        case type
-        case episodes
-        case startDate = "start_date"
-        case endDate =  "end_date"
-        case members
-        case score
+        case status, copyright, section
+        case lastUpdated = "last_updated"
+        case numResults = "num_results"
+        case results
     }
 }
+
+struct Results : Codable {
+    let section: String
+    let title: String
+    let abstract: String
+    let byline: String
+    let itemType: ItemType
+    let publishedDate: String
+    let multimedia: [Multimedia]
+    
+    enum CodingKeys: String, CodingKey {
+        case section, title, abstract, byline
+        case itemType = "item_type"
+        case publishedDate = "published_date"
+        case multimedia
+    }
+}
+
+enum ItemType: String, Codable {
+    case article = "Article"
+    case interactive = "Interactive"
+}
+
+struct Multimedia: Codable {
+    let url: String
+}
+
+
