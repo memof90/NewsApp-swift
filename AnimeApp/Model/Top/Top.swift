@@ -40,6 +40,17 @@ struct Results : Codable {
         case publishedDate = "published_date"
         case multimedia
     }
+    
+    init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        self.section = try container.decode(String.self, forKey: .section)
+        self.title = try container.decode(String.self, forKey: .title)
+        self.abstract = try container.decode(String.self, forKey: .abstract)
+        self.byline = try container.decode(String.self, forKey: .byline)
+        self.itemType = try container.decode(ItemType.self, forKey: .itemType)
+        self.publishedDate = try container.decode(String.self, forKey: .publishedDate)
+        self.multimedia = try  container.decode([Multimedia].self, forKey: .multimedia)
+    }
 }
 
 enum ItemType: String, Codable {

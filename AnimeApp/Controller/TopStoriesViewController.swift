@@ -7,6 +7,7 @@
 
 
 import UIKit
+import Kingfisher
 
 
 class TopStoriesViewController: UIViewController, UISearchBarDelegate {
@@ -24,13 +25,26 @@ class TopStoriesViewController: UIViewController, UISearchBarDelegate {
             return label
         }()
     
+//    MARK: - IBoutlets
+    
+    @IBOutlet weak var TopStoriesCollectionView: UICollectionView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         fetchResponse()
         fetchListBooks()
+    
+        
+//        TopStoriesCollectionView
+        TopStoriesCollectionView.delegate = self
+        TopStoriesCollectionView.dataSource = self
+        
+        registerNibsCells()
+    
         
     }
     
+//    MARK: - Fuctions
     //    MARK: - setupSearchBar
         fileprivate func setupSearchBar() {
             definesPresentationContext = true
@@ -40,15 +54,17 @@ class TopStoriesViewController: UIViewController, UISearchBarDelegate {
             searchController.searchBar.delegate = self
         }
     
+    private func registerNibsCells() {
+        TopStoriesCollectionView.register(UINib(nibName: TopStoriesCollectionViewCell.identifier, bundle: nil), forCellWithReuseIdentifier: TopStoriesCollectionViewCell.identifier)
+    }
+    
     func fetchResponse() {
         NetworkServicesModel.shared.fetchTopstories { resp, error in
-            
-            self.topStories = resp.map({return TopStoriesViewModel(top: $0)})
-
-//            self.topStories.forEach{print($0)}
-            
-
-            
+       
+                self.topStories = resp.map({return TopStoriesViewModel(top: $0)})
+                DispatchQueue.main.async {
+                self.TopStoriesCollectionView.reloadData()
+                }
         }
     }
     
@@ -56,9 +72,6 @@ class TopStoriesViewController: UIViewController, UISearchBarDelegate {
         NetworkServicesModel.shared.fetchListBooks { resp, error in
           
             self.bookList = resp.map({ return BookListsViewModel(book: $0)})
-           
-        
-    
             
         }
     }
@@ -69,4 +82,21 @@ class TopStoriesViewController: UIViewController, UISearchBarDelegate {
         setupSearchBar()
     }
     
+}
+
+extension TopStoriesViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return topStories.count
+    }
+    
+ 
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: TopStoriesCollectionViewCell.identifier, for: indexPath) as! TopStoriesCollectionViewCell
+        
+        
+        cell.setupTopAnimes(top: topStories[indexPath.item])
+
+        return cell
+    }
 }
