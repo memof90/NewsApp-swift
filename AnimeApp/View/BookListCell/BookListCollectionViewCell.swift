@@ -54,7 +54,9 @@ class BookListCollectionViewCell: UICollectionViewCell {
             rankLbl.text =  "date: \(book.publishedDate)"
             authorLbl.text = book.type
             contributorLbl.text = book.byline
+        
             HotLbl.text = book.section
+            HotLbl.backgroundColor = .random
         }
         
      
