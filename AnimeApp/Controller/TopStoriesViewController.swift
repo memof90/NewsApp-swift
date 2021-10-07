@@ -14,7 +14,7 @@ class TopStoriesViewController: UIViewController, UISearchBarDelegate {
     
 //    MARK: - Variables Global
         var topStories = [TopStoriesViewModel]()
-        var bookList : BookListsViewModel?
+        var allBooks = [BookListsViewModel]()
     //   MARK: - SearchBar Message to the data not appareance
         fileprivate let searchController = UISearchController(searchResultsController: nil)
         fileprivate let enterSearchTermLabel: UILabel = {
@@ -29,6 +29,9 @@ class TopStoriesViewController: UIViewController, UISearchBarDelegate {
     
     @IBOutlet weak var TopStoriesCollectionView: UICollectionView!
     
+    @IBOutlet weak var BooksCollectionView: UICollectionView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         fetchResponse()
@@ -38,6 +41,10 @@ class TopStoriesViewController: UIViewController, UISearchBarDelegate {
 //        TopStoriesCollectionView
         TopStoriesCollectionView.delegate = self
         TopStoriesCollectionView.dataSource = self
+        
+//       BooksCollectionView
+        BooksCollectionView.delegate = self
+        BooksCollectionView.dataSource = self
         
         registerNibsCells()
     
@@ -56,6 +63,7 @@ class TopStoriesViewController: UIViewController, UISearchBarDelegate {
     
     private func registerNibsCells() {
         TopStoriesCollectionView.register(UINib(nibName: TopStoriesCollectionViewCell.identifier, bundle: nil), forCellWithReuseIdentifier: TopStoriesCollectionViewCell.identifier)
+        BooksCollectionView.register(UINib(nibName: BookListCollectionViewCell.identifier, bundle: nil), forCellWithReuseIdentifier: BookListCollectionViewCell.identifier)
     }
     
     func fetchResponse() {
@@ -71,8 +79,45 @@ class TopStoriesViewController: UIViewController, UISearchBarDelegate {
     func fetchListBooks() {
         NetworkServicesModel.shared.fetchListBooks { resp, error in
           
-            self.bookList = resp.map({ return BookListsViewModel(book: $0)})
+            self.allBooks = resp.map({ return BookListsViewModel(book: $0)})
             
+            DispatchQueue.main.async {
+                self.BooksCollectionView.reloadData()
+            }
+
+        }
+        
+        
+    }
+    
+    
+    //    MARK: - Changes numberItems of cell depends of section of cell
+        /// function to pass number to items depends of cells and
+        /// collectionView_👉  Return collectionView numberItems
+    func collectionViewNumberOfItemsInSection(_ collectionView: UICollectionView) -> Int {
+        switch collectionView {
+        case TopStoriesCollectionView:
+            return topStories.count
+        case BooksCollectionView:
+            return allBooks.count
+        default:
+            return 0
+        }
+    }
+    
+    //    MARK: - Changes NumberOfItemsInSections of cell depends of section of cell
+    func collectionViewcellForItemAt(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        switch collectionView {
+        case TopStoriesCollectionView:
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: TopStoriesCollectionViewCell.identifier, for: indexPath) as! TopStoriesCollectionViewCell
+                cell.setupTopAnimes(top: topStories[indexPath.item])
+            return cell
+        case BooksCollectionView:
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: BookListCollectionViewCell.identifier, for: indexPath) as! BookListCollectionViewCell
+            cell.setupBooks(book:  allBooks[indexPath.item])
+            return cell
+        default:
+            return UICollectionViewCell()
         }
     }
     
@@ -86,17 +131,19 @@ class TopStoriesViewController: UIViewController, UISearchBarDelegate {
 
 extension TopStoriesViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return topStories.count
+        return collectionViewNumberOfItemsInSection(collectionView)
     }
     
  
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: TopStoriesCollectionViewCell.identifier, for: indexPath) as! TopStoriesCollectionViewCell
+//        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: TopStoriesCollectionViewCell.identifier, for: indexPath) as! TopStoriesCollectionViewCell
+//
+//
+//        cell.setupTopAnimes(top: topStories[indexPath.item])
+//
+//        return cell
         
-        
-        cell.setupTopAnimes(top: topStories[indexPath.item])
-
-        return cell
+        return collectionViewcellForItemAt(collectionView, cellForItemAt: indexPath)
     }
 }

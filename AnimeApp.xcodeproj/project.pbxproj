@@ -22,6 +22,8 @@
 		8D93170E270678360074922A /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D93170D270678360074922A /* String+Extension.swift */; };
 		8D93171227067B210074922A /* NetworkServicesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D93171127067B210074922A /* NetworkServicesModel.swift */; };
 		8D93171527067C4B0074922A /* TopStoriesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D93171427067C4B0074922A /* TopStoriesViewModel.swift */; };
+		8DE1A710270E212A000D44FD /* BookListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE1A70E270E2129000D44FD /* BookListCollectionViewCell.swift */; };
+		8DE1A711270E212A000D44FD /* BookListCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DE1A70F270E2129000D44FD /* BookListCollectionViewCell.xib */; };
 		8DF18162270CC27E00E20C53 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF18161270CC27E00E20C53 /* Book.swift */; };
 		8DF18165270CCA5100E20C53 /* BookListsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF18164270CCA5100E20C53 /* BookListsViewModel.swift */; };
 		D6AEFDD5EC3176872FF08AEA /* Pods_AnimeApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D375F9EB19858BFAD796F043 /* Pods_AnimeApp.framework */; };
@@ -46,6 +48,8 @@
 		8D93170D270678360074922A /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		8D93171127067B210074922A /* NetworkServicesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServicesModel.swift; sourceTree = "<group>"; };
 		8D93171427067C4B0074922A /* TopStoriesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopStoriesViewModel.swift; sourceTree = "<group>"; };
+		8DE1A70E270E2129000D44FD /* BookListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookListCollectionViewCell.swift; sourceTree = "<group>"; };
+		8DE1A70F270E2129000D44FD /* BookListCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BookListCollectionViewCell.xib; sourceTree = "<group>"; };
 		8DF18161270CC27E00E20C53 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		8DF18164270CCA5100E20C53 /* BookListsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookListsViewModel.swift; sourceTree = "<group>"; };
 		AA3B878DBB68D9EF4CFEAF51 /* Pods-AnimeApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimeApp.release.xcconfig"; path = "Target Support Files/Pods-AnimeApp/Pods-AnimeApp.release.xcconfig"; sourceTree = "<group>"; };
@@ -70,7 +74,6 @@
 				5AD285334D61C15C1B8181BC /* Pods-AnimeApp.debug.xcconfig */,
 				AA3B878DBB68D9EF4CFEAF51 /* Pods-AnimeApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -140,6 +143,7 @@
 		8D9316FA27065B830074922A /* View */ = {
 			isa = PBXGroup;
 			children = (
+				8DE1A70D270E2062000D44FD /* BookListCell */,
 				8D93170827066FA60074922A /* CardViewShadow */,
 				8D93170127066BCA0074922A /* TopAnimesViewCell */,
 			);
@@ -195,6 +199,15 @@
 				8D93171427067C4B0074922A /* TopStoriesViewModel.swift */,
 			);
 			path = TopStories;
+			sourceTree = "<group>";
+		};
+		8DE1A70D270E2062000D44FD /* BookListCell */ = {
+			isa = PBXGroup;
+			children = (
+				8DE1A70E270E2129000D44FD /* BookListCollectionViewCell.swift */,
+				8DE1A70F270E2129000D44FD /* BookListCollectionViewCell.xib */,
+			);
+			path = BookListCell;
 			sourceTree = "<group>";
 		};
 		8DF1815E270CC20700E20C53 /* Books */ = {
@@ -292,6 +305,7 @@
 				8D9316F027065B180074922A /* LaunchScreen.storyboard in Resources */,
 				8D9316ED27065B180074922A /* Assets.xcassets in Resources */,
 				8D9316E827065B150074922A /* Main.storyboard in Resources */,
+				8DE1A711270E212A000D44FD /* BookListCollectionViewCell.xib in Resources */,
 				8D93170527066C680074922A /* TopStoriesCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -351,6 +365,7 @@
 				8D9316EB27065B150074922A /* AnimeApp.xcdatamodeld in Sources */,
 				8D93170027065EC10074922A /* TopStoriesViewController.swift in Sources */,
 				8D93170427066C680074922A /* TopStoriesCollectionViewCell.swift in Sources */,
+				8DE1A710270E212A000D44FD /* BookListCollectionViewCell.swift in Sources */,
 				8D9316E127065B150074922A /* AppDelegate.swift in Sources */,
 				8D9316E327065B150074922A /* SceneDelegate.swift in Sources */,
 				8DF18162270CC27E00E20C53 /* Book.swift in Sources */,

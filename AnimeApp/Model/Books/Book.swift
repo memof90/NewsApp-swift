@@ -12,61 +12,66 @@ struct BookList: Codable {
     let status: String
     let copyright: String
     let numResults: Int
-    let lastModified: String
-    let results: BookResults
+    let results: [NewsResults]
     
     
     enum CodingKeys: String, CodingKey {
         case status, copyright
-        case lastModified = "last_modified"
         case numResults = "num_results"
         case results
     }
     
+    init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        self.status = try container.decode(String.self, forKey: .status)
+        self.copyright = try container.decode(String.self, forKey: .copyright)
+        self.numResults = try container.decode(Int.self, forKey: .numResults)
+        self.results = try container.decode([NewsResults].self, forKey: .results)
+    }
+    
+    
 }
 
 
-struct BookResults : Codable {
+struct NewsResults : Codable {
+    let source : String
+    let section : String
     let publishedDate : String
-    let bestsellersDate : String
-    let books: [BooksDetail]
+    let byline : String
+    let type: String
+    let title : String
+    let abstract: String
+    let media: [Media]
     
     enum CodingKeys: String, CodingKey {
+        case source, section, byline, title, abstract, type
         case publishedDate =  "published_date"
-        case bestsellersDate = "bestsellers_date"
-        case books
+        case media
     }
     
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
+        self.source = try container.decode(String.self, forKey: .source)
+        self.section = try container.decode(String.self, forKey: .section)
         self.publishedDate = try  container.decode(String.self, forKey: .publishedDate)
-        self.bestsellersDate = try container.decode(String.self, forKey: .bestsellersDate)
-        self.books = try container.decode([BooksDetail].self, forKey: .books)
+        self.byline = try container.decode(String.self, forKey: .byline)
+        self.type  = try container.decode(String.self, forKey: .type)
+        self.title = try container.decode(String.self, forKey: .title)
+        self.abstract = try container.decode(String.self, forKey: .abstract)
+        self.media = try container.decode([Media].self, forKey: .media)
     }
 }
 
 
-struct BooksDetail : Codable {
-    let rank: Int
-    let description : String
-    let title: String
-    let author: String
-    let contributor: String
-    let bookImage: String
-    let amazonProduct: String
-    let buyLinks: [LinksBooks]
+struct Media : Codable {
+    let mediaData: [LinksMedia]
     
     enum CodingKeys: String, CodingKey {
-        case rank
-        case description,title,author,contributor
-        case amazonProduct = "amazon_product_url"
-        case bookImage = "book_image"
-        case buyLinks = "buy_links"
+        case mediaData = "media-metadata"
     }
     
 }
 
-struct LinksBooks: Codable {
-    let name: String
+struct LinksMedia: Codable {
     let url: String
 }

@@ -10,39 +10,28 @@ import Foundation
 
 struct BookListsViewModel {
     
+    let source : String
+    let section : String
     let publishedDate : String
-    let bestsellersDate : String
-    var books: [BooksDetail]
+    let byline : String
+    let type: String
+    let title : String
+    let abstract: String
+    let media: [Media]
     
-    init(book: BookResults) {
+    init(book: NewsResults) {
+        self.source = book.source
+        self.section = book.section
         self.publishedDate = book.publishedDate
-        self.bestsellersDate = book.bestsellersDate
-        self.books = book.books
+        self.byline = book.byline
+        self.type = book.type
+        self.title = book.title
+        self.abstract = book.abstract
+        self.media = book.media
     }
     
 }
 
-//struct BookDetailViewModel {
-//        let rank: Int
-//        let description : String
-//        let title: String
-//        let author: String
-//        let contributor: String
-//        let bookImage: String
-//        let amazonProduct: String
-//        let buyLinks: [LinksBooks]
-//
-//        init(book: BooksDetail) {
-//            self.rank = book.rank
-//            self.description = book.description
-//            self.title = book.title
-//            self.author = book.author
-//            self.contributor = book.contributor
-//            self.bookImage  = book.bookImage
-//            self.amazonProduct = book.amazonProduct
-//            self.buyLinks = book.buyLinks
-//        }
-//}
 
 
 

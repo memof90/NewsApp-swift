@@ -60,9 +60,9 @@ class NetworkServicesModel {
 
     }
     
-    func fetchListBooks(completion: @escaping ((BookResults?, Error?) -> Void)) {
+    func fetchListBooks(completion: @escaping (([NewsResults], Error?) -> Void)) {
         let token = "fUGq4RWA8G32sBHVOAKdxdX6xZLIK8Xu"
-        let URL_BASE = "https://api.nytimes.com/svc/books/v3/lists/current/hardcover-fiction.json?api-key=\(token)"
+        let URL_BASE = "https://api.nytimes.com/svc/mostpopular/v2/emailed/7.json?api-key=\(token)"
         guard let url = URL(string: URL_BASE) else {return}
         var request = URLRequest(url: url)
         request.httpMethod = "GET"
@@ -70,19 +70,17 @@ class NetworkServicesModel {
         let task = session.dataTask(with: request) { data, response, error in
 //            print(response!)
             guard let data = data else { return }
-            
             do {
                 let book = try JSONDecoder().decode(BookList.self, from: data)
+//                print(book.results)
                 completion(book.results, nil)
-            } catch let jsonErr  {
+            } catch  let jsonErr {
                 debugPrint("Failed to decode json:", jsonErr)
-                completion(nil, jsonErr)
             }
         }
         task.resume()
     }
     
-
 }
 
 
