@@ -272,74 +272,57 @@ To estructurtes the Views I use **StoryBoard and Nibs to ViewCells**
   </tr>
   <tr>
     <td><img src="https://github.com/memof90/screenProjects/blob/master/AnimateApp/storyboard/Captura%20de%20Pantalla%202021-10-08%20a%20la(s)%201.57.43%20p.%C2%A0m..png?raw=true" ></td>
-    <td><img src="hhttps://github.com/memof90/screenProjects/blob/master/AnimateApp/storyboard/Captura%20de%20Pantalla%202021-10-08%20a%20la(s)%201.57.24%20p.%C2%A0m..png?raw=true"></td>
+    <td><img src="https://github.com/memof90/screenProjects/blob/master/AnimateApp/storyboard/Captura%20de%20Pantalla%202021-10-08%20a%20la(s)%201.57.24%20p.%C2%A0m..png?raw=true"></td>
   </tr>
  </table>
-
-
-
-
-
-
-
-### View The movies the Section Detail and Section Movies
-
-<table>
-  <tr>
-    <td>Popular</td>
-     <td>Detailn</td>
-  </tr>
-  <tr>
-    <td><img src="https://github.com/memof90/MovieApp-Swift-Offline-Online-restApi/blob/master/tmdMovie/ScreenApp/Captura%20de%20Pantalla%202021-09-16%20a%20la(s)%203.55.40%20p.%C2%A0m..png?raw=true" width=270 height=480></td>
-    <td><img src="https://github.com/memof90/MovieApp-Swift-Offline-Online-restApi/blob/master/tmdMovie/ScreenApp/Captura%20de%20Pantalla%202021-09-16%20a%20la(s)%203.55.28%20p.%C2%A0m..png?raw=true" width=270 height=480></td>
-  </tr>
- </table>
-
 
 ## Folders To App
 
-### Helpers
+### Extensions
 
-This Help me to Layout Views the App
+This Help me to Layout Views the App,corner radius to image, convert url to string, random color animations, UIViewController instance and aminations to controllers 
 
-<img src="https://github.com/memof90/MovieApp-Swift-Offline-Online-restApi/blob/master/tmdMovie/ScreenApp/Captura%20de%20Pantalla%202021-09-16%20a%20la(s)%203.45.14%20p.%C2%A0m..png?raw=true">
+<img src="https://github.com/memof90/screenProjects/blob/master/AnimateApp/projectsFiles/Captura%20de%20Pantalla%202021-10-08%20a%20la(s)%201.58.21%20p.%C2%A0m..png?raw=true">
 
 ### Services
 
 Help me to consume APIRest and pass data to coreData
 
-** File **PopularservicesModel...** Contain the model to save data to api and fetch core Data to save Storage 
 ** File **NetworkServices** conatin the services to consume api with URLSession and decode data to Api 
 
-<img src="https://github.com/memof90/MovieApp-Swift-Offline-Online-restApi/blob/master/tmdMovie/ScreenApp/Captura%20de%20Pantalla%202021-09-16%20a%20la(s)%203.44.31%20p.%C2%A0m..png?raw=true">
+<img src="https://github.com/memof90/screenProjects/blob/master/AnimateApp/projectsFiles/Captura%20de%20Pantalla%202021-10-08%20a%20la(s)%201.58.43%20p.%C2%A0m..png?raw=true">
 
 ### Controllers 
 
 Help me to managed Protocol and state the app 
 
-- **BaseTabController:** contain the all Controller principal **Popular**, **Toprated**, **Upcomming** and **Search** 
-- **BaseListController:** An abstract class that serves as the basis for objects that enable archiving and distribution of other objects.
-- **DetailController:** Contain the Detail managed to each View
+- **TopStoriesViewController:** contain the all Controller principal **TopStories**, **BookList**
+- **DetailTopController:** manage view to detail View TopStories 
+- **DetailController:** manege view to detail BookController
 
-<img src="https://github.com/memof90/MovieApp-Swift-Offline-Online-restApi/blob/master/tmdMovie/ScreenApp/Captura%20de%20Pantalla%202021-09-16%20a%20la(s)%203.43.37%20p.%C2%A0m..png?raw=true">
+<img src="https://github.com/memof90/screenProjects/blob/master/AnimateApp/projectsFiles/Captura%20de%20Pantalla%202021-10-08%20a%20la(s)%201.59.33%20p.%C2%A0m..png?raw=true">
 
 ### Views 
 
-Help me to managed View the cell to each View SearhViewCell, PopularViewCell, UpcommingViewCell, TopRatedViewCell and Detail To each ViewCell
+- **TopStoriesCollectionViewCell:** contain cells nibs to view topStories 
+- **BookListCollectionViewCell:** contain cells nibs to view Booklist 
+- **CardViewShadow** contain shadowm to each card in cells 
 
-- **ViewCell:** contain the all Controller principal **Popular**, **Toprated**, **Upcomming** and **Search** 
-- **DetailViewCell:** contain the all Controller principal **Popular**, **Toprated**, **Upcomming** and **Search** 
+<img src="https://github.com/memof90/screenProjects/blob/master/AnimateApp/projectsFiles/Captura%20de%20Pantalla%202021-10-08%20a%20la(s)%201.59.13%20p.%C2%A0m..png?raw=true">
 
-<img src="https://github.com/memof90/MovieApp-Swift-Offline-Online-restApi/blob/master/tmdMovie/ScreenApp/Captura%20de%20Pantalla%202021-09-16%20a%20la(s)%203.43.01%20p.%C2%A0m..png?raw=true">
+## View Model
+
+help me to separete to facilitate the separation of user interface development from the business layer or backend
+
+<img src="https://github.com/memof90/screenProjects/blob/master/AnimateApp/projectsFiles/Captura%20de%20Pantalla%202021-10-08%20a%20la(s)%201.59.49%20p.%C2%A0m..png?raw=true">
 
 ### Model 
 
-Help me to managed Model and Strutured the data to Decode and save to pass Controllers Searh Popular, Upcomming, TopRated and DBManager to local Database in this case CoreData
+Help me to managed Model and Strutured the data to Decode and save to pass Controllers 
 
-- **Model:** contain the all Model strurture principal **Popular**, **Toprated**, **Upcomming** and **Search** 
-- **DBManager:** contain Managed local database  
+- **Model:** contain the all Model strurture principal **Top**, **Book**
 
-<img src="https://github.com/memof90/MovieApp-Swift-Offline-Online-restApi/blob/master/tmdMovie/ScreenApp/Captura%20de%20Pantalla%202021-09-16%20a%20la(s)%203.42.31%20p.%C2%A0m..png?raw=true">
+<img src="https://github.com/memof90/screenProjects/blob/master/AnimateApp/projectsFiles/Captura%20de%20Pantalla%202021-10-08%20a%20la(s)%202.00.04%20p.%C2%A0m..png?raw=true">
 
  
  ## Testing 
