@@ -164,14 +164,9 @@ dataSource = UITableViewDiffableDataSource<Int, UUID>(tableView: tableView) {
 
 ![](https://github.com/memof90/FoodPin1-Swift/blob/master/FoodPin/images/Simulator%20Screen%20Recording%20-%20iPhone%2012%20Pro%20-%202021-07-29%20at%2011.56.54.gif?raw=true)
 
-## Image example Light Mode
+## Core data to aplication Offline
 
-<img src="https://github.com/memof90/FoodPin1-Swift/blob/master/FoodPin/images/Simulator%20Screen%20Shot%20-%20iPhone%2012%20Pro%20-%202021-07-29%20at%2011.54.38.png?raw=true" width="200" height="400">
-
-## Image Dark Mode 
-
-<img src="https://github.com/memof90/FoodPin1-Swift/blob/master/FoodPin/images/Simulator%20Screen%20Shot%20-%20iPhone%2012%20Pro%20-%202021-07-29%20at%2011.54.57.png?raw=true" width="200" height="400">
-
+![](https://github.com/memof90/MovieApp-Swift-Offline-Online-restApi/blob/master/tmdMovie/ScreenApp/Captura%20de%20Pantalla%202021-09-16%20a%20la(s)%203.40.10%20p.%C2%A0m..png?raw=true)
 
 
 ## Patron de Diseño 
