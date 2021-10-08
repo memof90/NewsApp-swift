@@ -182,6 +182,19 @@ class TopStoriesViewController: UIViewController, UISearchBarDelegate{
         }
     }
     
+    func collectionViewDidSelectItemAt(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) -> () {
+        switch collectionView {
+        case TopStoriesCollectionView:
+            let top = filter ? topStories[indexPath.item] : filteredDataTop[indexPath.item]
+            let controller = DetailTopViewController.instance()
+            controller.navigationItem.title = top.title
+            controller.top = filter ? topStories[indexPath.item] : filteredDataTop[indexPath.item]
+            navigationController?.pushViewController(controller, animated: true)
+        default :
+            return ()
+        }
+    }
+    
 //    MARK: - IBAction
     
     @IBAction func searchActionBtn(_ sender: Any) {
@@ -203,5 +216,9 @@ extension TopStoriesViewController: UICollectionViewDelegate, UICollectionViewDa
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         return collectionViewcellForItemAt(collectionView, cellForItemAt: indexPath)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        collectionViewDidSelectItemAt(collectionView, didSelectItemAt: indexPath)
     }
 }

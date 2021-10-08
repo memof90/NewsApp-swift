@@ -87,8 +87,8 @@
                                                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recently Added Episodes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jVt-qr-uLM">
-                                                                <rect key="frame" x="0.0" y="29" width="164.5" height="17"/>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recently Added News" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jVt-qr-uLM">
+                                                                <rect key="frame" x="0.0" y="29" width="141.5" height="17"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                 <color key="textColor" systemColor="systemGray3Color"/>
                                                                 <nil key="highlightedColor"/>
@@ -175,6 +175,118 @@
             </objects>
             <point key="canvasLocation" x="956.52173913043487" y="83.705357142857139"/>
         </scene>
+        <!--Detail Top View Controller-->
+        <scene sceneID="vAh-ch-Pz6">
+            <objects>
+                <viewController storyboardIdentifier="DetailTopViewController" id="5vC-bv-MkP" customClass="DetailTopViewController" customModule="AnimeApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="968-Pl-Gww">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="r3E-Xm-wiJ">
+                                <rect key="frame" x="47" y="145" width="320" height="606.5"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="252" image="cala-w6ftFbPCs9I-unsplash" translatesAutoresizingMaskIntoConstraints="NO" id="mb9-4D-u49">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="341"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="320" id="65n-Pi-F1T"/>
+                                            <constraint firstAttribute="height" constant="341" id="bTy-EP-Yxt"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="8QC-ZY-pTU">
+                                        <rect key="frame" x="0.0" y="391" width="320" height="215.5"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="4dN-7h-S42">
+                                                <rect key="frame" x="0.0" y="0.0" width="244" height="31"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2021-10-07" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TP6-Ze-Jwg">
+                                                        <rect key="frame" x="0.0" y="0.0" width="113" height="31"/>
+                                                        <color key="backgroundColor" red="1" green="0.15285954430000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="113" id="cdz-aF-eVa"/>
+                                                            <constraint firstAttribute="height" constant="31" id="fgE-bT-vzP"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                        <color key="textColor" red="0.99597054719924927" green="0.99614065885543823" blue="0.99595993757247925" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="30"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Article" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eu5-g4-5Bq">
+                                                        <rect key="frame" x="131" y="0.0" width="113" height="31"/>
+                                                        <color key="backgroundColor" red="1" green="0.15285954430000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="31" id="SHN-UM-cYG"/>
+                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="113" id="a8k-uY-b6t"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                        <color key="textColor" red="0.99597054719924927" green="0.99614065885543823" blue="0.99595993757247925" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="30"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wFe-r9-kwA">
+                                                <rect key="frame" x="0.0" y="66" width="280.5" height="40"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="How to Sell Good, Inexpensive Wines Without Pandering">
+                                                        <attributes>
+                                                            <font key="NSFont" metaFont="system" size="18"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FMJ-7y-vfP">
+                                                <rect key="frame" x="0.0" y="141" width="320" height="74.5"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="Mary Taylor is betting that curious consumers will want well-made bottles, labeled with just the facts.">
+                                                        <attributes>
+                                                            <color key="NSColor" systemColor="systemGray4Color"/>
+                                                            <font key="NSFont" size="20" name=".SFNS-Regular"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="4" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ZmZ-oH-iWg"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="r3E-Xm-wiJ" firstAttribute="centerX" secondItem="968-Pl-Gww" secondAttribute="centerX" id="aKg-ch-tUK"/>
+                            <constraint firstItem="r3E-Xm-wiJ" firstAttribute="centerY" secondItem="968-Pl-Gww" secondAttribute="centerY" id="nSN-3X-Sli"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="abstractLabel" destination="FMJ-7y-vfP" id="3yk-C2-TDS"/>
+                        <outlet property="hotLbl" destination="TP6-Ze-Jwg" id="hie-oI-hST"/>
+                        <outlet property="imageView" destination="mb9-4D-u49" id="LJt-If-udS"/>
+                        <outlet property="titleLbl" destination="wFe-r9-kwA" id="ZzW-CV-0Ez"/>
+                        <outlet property="typeLbl" destination="eu5-g4-5Bq" id="6V0-Yn-CR9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LOV-vb-WXG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1808.6956521739132" y="83.705357142857139"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="daK-YY-AZP">
             <objects>
@@ -195,6 +307,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="cala-w6ftFbPCs9I-unsplash" width="320" height="480"/>
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>
         <image name="person.circle.fill" catalog="system" width="128" height="121"/>
         <systemColor name="systemBackgroundColor">
@@ -202,6 +315,9 @@
         </systemColor>
         <systemColor name="systemGray3Color">
             <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray4Color">
+            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

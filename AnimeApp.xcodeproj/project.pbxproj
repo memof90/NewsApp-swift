@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		8D14D042270F709B0092CFC1 /* UIView+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D14D041270F709B0092CFC1 /* UIView+Layout.swift */; };
+		8D14D045270FAB590092CFC1 /* DetailTopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D14D044270FAB590092CFC1 /* DetailTopViewController.swift */; };
+		8D14D047270FB90D0092CFC1 /* UIVIewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D14D046270FB90D0092CFC1 /* UIVIewController+Extension.swift */; };
 		8D2BFA91270E77A70000A499 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D2BFA90270E77A60000A499 /* UIColor+Extension.swift */; };
 		8D9316E127065B150074922A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9316E027065B150074922A /* AppDelegate.swift */; };
 		8D9316E327065B150074922A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9316E227065B150074922A /* SceneDelegate.swift */; };
@@ -34,6 +36,8 @@
 /* Begin PBXFileReference section */
 		5AD285334D61C15C1B8181BC /* Pods-AnimeApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimeApp.debug.xcconfig"; path = "Target Support Files/Pods-AnimeApp/Pods-AnimeApp.debug.xcconfig"; sourceTree = "<group>"; };
 		8D14D041270F709B0092CFC1 /* UIView+Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Layout.swift"; sourceTree = "<group>"; };
+		8D14D044270FAB590092CFC1 /* DetailTopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTopViewController.swift; sourceTree = "<group>"; };
+		8D14D046270FB90D0092CFC1 /* UIVIewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIVIewController+Extension.swift"; sourceTree = "<group>"; };
 		8D2BFA90270E77A60000A499 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		8D9316DD27065B150074922A /* AnimeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D9316E027065B150074922A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -87,6 +91,14 @@
 				8D14D041270F709B0092CFC1 /* UIView+Layout.swift */,
 			);
 			path = FillSuperview;
+			sourceTree = "<group>";
+		};
+		8D14D043270FAB3F0092CFC1 /* DetailController */ = {
+			isa = PBXGroup;
+			children = (
+				8D14D044270FAB590092CFC1 /* DetailTopViewController.swift */,
+			);
+			path = DetailController;
 			sourceTree = "<group>";
 		};
 		8D9316D427065B150074922A = {
@@ -147,6 +159,7 @@
 		8D9316F927065B6E0074922A /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				8D14D043270FAB3F0092CFC1 /* DetailController */,
 				8D9316FF27065EC10074922A /* TopStoriesViewController.swift */,
 			);
 			path = Controller;
@@ -177,6 +190,7 @@
 				8D93170627066CD40074922A /* UIView+Extension.swift */,
 				8D93170D270678360074922A /* String+Extension.swift */,
 				8D2BFA90270E77A60000A499 /* UIColor+Extension.swift */,
+				8D14D046270FB90D0092CFC1 /* UIVIewController+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -374,6 +388,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D14D042270F709B0092CFC1 /* UIView+Layout.swift in Sources */,
+				8D14D045270FAB590092CFC1 /* DetailTopViewController.swift in Sources */,
 				8D93170727066CD40074922A /* UIView+Extension.swift in Sources */,
 				8D93170E270678360074922A /* String+Extension.swift in Sources */,
 				8D93171527067C4B0074922A /* TopStoriesViewModel.swift in Sources */,
@@ -386,6 +401,7 @@
 				8D2BFA91270E77A70000A499 /* UIColor+Extension.swift in Sources */,
 				8DF18162270CC27E00E20C53 /* Book.swift in Sources */,
 				8D93171227067B210074922A /* NetworkServicesModel.swift in Sources */,
+				8D14D047270FB90D0092CFC1 /* UIVIewController+Extension.swift in Sources */,
 				8D93170A27066FF00074922A /* CardViewShadow.swift in Sources */,
 				8D93170C270671B70074922A /* Top.swift in Sources */,
 				8DF18165270CCA5100E20C53 /* BookListsViewModel.swift in Sources */,
