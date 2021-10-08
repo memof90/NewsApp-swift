@@ -44,6 +44,7 @@ class TopStoriesViewController: UIViewController, UISearchBarDelegate{
     
     @IBOutlet weak var BooksCollectionView: UICollectionView!
     
+    @IBOutlet weak var activityIndicatorTop: UIActivityIndicatorView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -62,9 +63,13 @@ class TopStoriesViewController: UIViewController, UISearchBarDelegate{
         
 //        Register NibsCells
         registerNibsCells()
-                
+               
+//        present search animation
         TopStoriesCollectionView.addSubview(enterSearchTermLabel)
         enterSearchTermLabel.fillSuperview(padding: .init(top: 100, left: 50, bottom: 0, right: 50))
+        
+        activityIndicatorTop.startAnimating()
+        activityIndicatorTop.isHidden = false
         
     }
     
@@ -176,6 +181,8 @@ class TopStoriesViewController: UIViewController, UISearchBarDelegate{
         case BooksCollectionView:
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: BookListCollectionViewCell.identifier, for: indexPath) as! BookListCollectionViewCell
             cell.setupBooks(book:  allBooks[indexPath.item])
+            activityIndicatorTop.stopAnimating()
+            activityIndicatorTop.isHidden = true
             return cell
         default:
             return UICollectionViewCell()
@@ -189,6 +196,12 @@ class TopStoriesViewController: UIViewController, UISearchBarDelegate{
             let controller = DetailTopViewController.instance()
             controller.navigationItem.title = top.title
             controller.top = filter ? topStories[indexPath.item] : filteredDataTop[indexPath.item]
+            navigationController?.pushViewController(controller, animated: true)
+        case BooksCollectionView:
+            let books = allBooks[indexPath.item]
+            let controller = DetailBookController.instance()
+            controller.navigationItem.title = books.title
+            controller.book = allBooks[indexPath.item]
             navigationController?.pushViewController(controller, animated: true)
         default :
             return ()

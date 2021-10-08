@@ -107,6 +107,10 @@
                                                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                         </collectionViewFlowLayout>
+                                                        <activityIndicatorView key="backgroundView" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" id="7O0-SZ-5xJ">
+                                                            <rect key="frame" x="0.0" y="0.0" width="414" height="300"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        </activityIndicatorView>
                                                         <cells>
                                                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="In9-1a-b3H">
                                                                 <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
@@ -169,6 +173,7 @@
                     <connections>
                         <outlet property="BooksCollectionView" destination="5fe-cD-xOA" id="dke-c8-BUL"/>
                         <outlet property="TopStoriesCollectionView" destination="pu6-0U-XGa" id="6Ts-ui-AD8"/>
+                        <outlet property="activityIndicatorTop" destination="7O0-SZ-5xJ" id="BYF-fX-xav"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -184,7 +189,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="r3E-Xm-wiJ">
-                                <rect key="frame" x="47" y="155" width="320" height="586.5"/>
+                                <rect key="frame" x="47" y="154.5" width="320" height="587.5"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="252" image="cala-w6ftFbPCs9I-unsplash" translatesAutoresizingMaskIntoConstraints="NO" id="mb9-4D-u49">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="341"/>
@@ -199,7 +204,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="8QC-ZY-pTU">
-                                        <rect key="frame" x="0.0" y="371" width="320" height="215.5"/>
+                                        <rect key="frame" x="0.0" y="371" width="320" height="216.5"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="4dN-7h-S42">
                                                 <rect key="frame" x="0.0" y="0.0" width="244" height="31"/>
@@ -239,19 +244,18 @@
                                                 </subviews>
                                             </stackView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wFe-r9-kwA">
-                                                <rect key="frame" x="0.0" y="66" width="280.5" height="40"/>
+                                                <rect key="frame" x="0.0" y="66" width="286" height="41"/>
                                                 <attributedString key="attributedText">
                                                     <fragment content="How to Sell Good, Inexpensive Wines Without Pandering">
                                                         <attributes>
-                                                            <font key="NSFont" metaFont="system" size="18"/>
-                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            <font key="NSFont" metaFont="system" size="17"/>
                                                         </attributes>
                                                     </fragment>
                                                 </attributedString>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FMJ-7y-vfP">
-                                                <rect key="frame" x="0.0" y="141" width="320" height="74.5"/>
+                                                <rect key="frame" x="0.0" y="142" width="320" height="74.5"/>
                                                 <attributedString key="attributedText">
                                                     <fragment content="Mary Taylor is betting that curious consumers will want well-made bottles, labeled with just the facts.">
                                                         <attributes>
@@ -286,6 +290,132 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LOV-vb-WXG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1808.6956521739132" y="83.705357142857139"/>
+        </scene>
+        <!--Detail Book Controller-->
+        <scene sceneID="0iK-jR-2HS">
+            <objects>
+                <viewController storyboardIdentifier="DetailBookController" id="Ytf-Le-IHi" customClass="DetailBookController" customModule="AnimeApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fnu-P8-eZc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="27" translatesAutoresizingMaskIntoConstraints="NO" id="u5U-B2-MBa">
+                                <rect key="frame" x="42" y="142" width="330" height="612.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ihb-qL-Ayx">
+                                        <rect key="frame" x="0.0" y="0.0" width="330" height="43"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Why Exercise Is More Important Than Weight Loss for a Longer Life">
+                                                <attributes>
+                                                    <font key="NSFont" metaFont="system" size="18"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="58" translatesAutoresizingMaskIntoConstraints="NO" id="BWH-wz-5Fb">
+                                        <rect key="frame" x="0.0" y="70" width="330" height="29"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Released Jan,2019" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eeg-NB-6sv">
+                                                <rect key="frame" x="0.0" y="0.0" width="173" height="29"/>
+                                                <color key="backgroundColor" red="1" green="0.15285954430000001" blue="0.37223120450000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                <color key="textColor" red="0.99597054719924927" green="0.99614065885543823" blue="0.99595993757247925" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="30"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bussiness" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ANu-3V-FO5">
+                                                <rect key="frame" x="231" y="0.0" width="99" height="29"/>
+                                                <color key="backgroundColor" red="0.69980908289999999" green="0.51457053419999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="99" id="dCY-mT-dTU"/>
+                                                    <constraint firstAttribute="height" constant="29" id="jXd-Ta-mk6"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="30"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cala-w6ftFbPCs9I-unsplash" translatesAutoresizingMaskIntoConstraints="NO" id="mC4-d2-fn9">
+                                        <rect key="frame" x="0.0" y="126" width="330" height="316"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="316" id="ThJ-Sn-YiE"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="76" translatesAutoresizingMaskIntoConstraints="NO" id="Y9i-NJ-dSy">
+                                        <rect key="frame" x="0.0" y="469" width="330" height="21"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="By Gretchen Reynolds" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lLA-tm-H0z">
+                                                <rect key="frame" x="0.0" y="0.0" width="189" height="21"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="169" id="EIU-NB-Jjo"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" white="0.75" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Article" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xx7-kp-jfZ">
+                                                <rect key="frame" x="265" y="0.0" width="65" height="21"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="64" id="AE3-vJ-Axe"/>
+                                                    <constraint firstAttribute="height" constant="21" id="gKc-j1-Mkx"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" white="0.75" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1oJ-cn-df7">
+                                        <rect key="frame" x="0.0" y="517" width="330" height="95.5"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="People typically lower their risks of heart disease and premature death far more by gaining fitness than by dropping weight.">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" metaFont="system" size="20"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="XGW-nM-rI6"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="u5U-B2-MBa" firstAttribute="centerY" secondItem="fnu-P8-eZc" secondAttribute="centerY" id="UR9-Fs-UsE"/>
+                            <constraint firstItem="u5U-B2-MBa" firstAttribute="centerX" secondItem="fnu-P8-eZc" secondAttribute="centerX" id="omF-S0-AMc"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="abstractLbl" destination="1oJ-cn-df7" id="bbf-Bg-ZCi"/>
+                        <outlet property="bussinessLbl" destination="ANu-3V-FO5" id="LUD-Ur-Vow"/>
+                        <outlet property="byLbl" destination="lLA-tm-H0z" id="Jho-Gb-vSP"/>
+                        <outlet property="dateLbl" destination="Eeg-NB-6sv" id="5mt-29-ps0"/>
+                        <outlet property="imageLbl" destination="mC4-d2-fn9" id="oVD-XK-klv"/>
+                        <outlet property="titleLbl" destination="ihb-qL-Ayx" id="k6l-Pc-Kma"/>
+                        <outlet property="typeLbl" destination="Xx7-kp-jfZ" id="PMl-p9-5ou"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mzp-Tj-ZsT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2607.2463768115945" y="84.375"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="daK-YY-AZP">

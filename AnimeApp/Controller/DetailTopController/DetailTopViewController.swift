@@ -30,12 +30,12 @@ class DetailTopViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        populatedView()
+        topView()
         
         navigationItem.largeTitleDisplayMode = .never
     }
     
-    private func populatedView() {
+    private func topView() {
         for tops in top.multimedia {
             imageView.kf.setImage(with: tops.url.asUrl,
                                   placeholder: UIImage(named: top.title),
