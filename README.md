@@ -1,10 +1,6 @@
 # NewsApp-swift
 this is a news app with swift 
 
-
-# MovieApp Swift PROGRAMATICALLY with Core Data Save Data Online and Offline 
-This is a app with Swift, Programatically, RestApi, Generics, CoreData and Allow to user Save online and Offline
-
 ## How To use This app
 
 ## Entregables 
@@ -259,13 +255,32 @@ https://developer.nytimes.com
 
 ### Information to Project 
 
-the project only use Two Libraries External **Kingfisher** to consume image and save in cache the api and **Youtube-ios-player-helper** to consume Video to app not more the consume to the app is only with **Generics** and **URLSession** that provides APi to apple to save the Data in the Storage I can Use **CoreData** and NSManagedObject to strutured the Model To the  View I don't Use StoryBoard and SwiftUI all View is Doing with **PROGRAMATICALLY**
+the project only use Two Libraries External **Kingfisher** to consume image and save in cache the api to app not more the consume to the app is only with **Generics** and **URLSession** that provides APi to apple to save the Data in the Storage **I can Use **CoreData** and NSManagedObject to strutured the Model To the  View But ***IMPLEMENTING IN NEW RELEASE***
 
-<img src="https://github.com/memof90/MovieApp-Swift-Offline-Online-restApi/blob/master/tmdMovie/ScreenApp/Captura%20de%20Pantalla%202021-09-16%20a%20la(s)%203.41.43%20p.%C2%A0m..png?raw=true" width="200" height="400">
+<img src="https://github.com/memof90/screenProjects/blob/master/AnimateApp/projectsFiles/Captura%20de%20Pantalla%202021-10-08%20a%20la(s)%201.48.47%20p.%C2%A0m..png?raw=true">
 
 ## Views Strutures 
 
-To estructurtes the Views I use **PROGRAMATICALLY**
+To estructurtes the Views I use **StoryBoard and Nibs to ViewCells**
+
+<img src="https://github.com/memof90/screenProjects/blob/master/AnimateApp/storyboard/Captura%20de%20Pantalla%202021-10-08%20a%20la(s)%201.56.53%20p.%C2%A0m..png?raw=true">
+
+<table>
+  <tr>
+    <td>Nibs Top Stories</td>
+     <td>Nibs Book List</td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/memof90/screenProjects/blob/master/AnimateApp/storyboard/Captura%20de%20Pantalla%202021-10-08%20a%20la(s)%201.57.43%20p.%C2%A0m..png?raw=true" ></td>
+    <td><img src="hhttps://github.com/memof90/screenProjects/blob/master/AnimateApp/storyboard/Captura%20de%20Pantalla%202021-10-08%20a%20la(s)%201.57.24%20p.%C2%A0m..png?raw=true"></td>
+  </tr>
+ </table>
+
+
+
+
+
+
 
 ### View The movies the Section Detail and Section Movies
 
@@ -326,20 +341,6 @@ Help me to managed Model and Strutured the data to Decode and save to pass Contr
 
 <img src="https://github.com/memof90/MovieApp-Swift-Offline-Online-restApi/blob/master/tmdMovie/ScreenApp/Captura%20de%20Pantalla%202021-09-16%20a%20la(s)%203.42.31%20p.%C2%A0m..png?raw=true">
 
-## Tools Help Me 
-
-<table>
-  <tr>
-    <td>Postman</td>
-     <td>Xcode</td>
-     <td>CoreData</td>
-  </tr>
-  <tr>
-    <td><img src="https://github.com/memof90/MovieApp-Swift-Offline-Online-restApi/blob/master/tmdMovie/ScreenApp/Captura%20de%20Pantalla%202021-09-16%20a%20la(s)%203.41.06%20p.%C2%A0m..png?raw=true"></td>
-    <td><img src="https://cutt.ly/rEtzcha"></td>
-    <td><img src="https://github.com/memof90/MovieApp-Swift-Offline-Online-restApi/blob/master/tmdMovie/ScreenApp/Captura%20de%20Pantalla%202021-09-16%20a%20la(s)%203.40.10%20p.%C2%A0m..png?raw=true"></td>
-  </tr>
- </table>
  
  ## Testing 
 
@@ -349,37 +350,14 @@ Help me to managed Model and Strutured the data to Decode and save to pass Contr
      <td>Testing Performance</td>
   </tr>
   <tr>
-    <td><img src="https://github.com/memof90/MovieApp-Swift-Offline-Online-restApi/blob/master/tmdMovie/ScreenApp/Captura%20de%20Pantalla%202021-09-16%20a%20la(s)%203.13.15%20p.%C2%A0m..png?raw=true"></td>
-    <td><img src="https://github.com/memof90/MovieApp-Swift-Offline-Online-restApi/blob/master/tmdMovie/ScreenApp/Captura%20de%20Pantalla%202021-09-16%20a%20la(s)%203.27.21%20p.%C2%A0m..png?raw=true"></td>
+    <td><img src="https://github.com/memof90/screenProjects/blob/master/AnimateApp/projectsFiles/Captura%20de%20Pantalla%202021-10-08%20a%20la(s)%201.40.32%20p.%C2%A0m..png?raw=true"></td>
+    <td><img src="https://github.com/memof90/screenProjects/blob/master/AnimateApp/projectsFiles/Captura%20de%20Pantalla%202021-10-08%20a%20la(s)%201.46.12%20p.%C2%A0m..png?raw=true"></td>
   </tr>
  </table>
 
- ## Testing 
- 
- <table>
-  <tr>
-     <td>Testing Api</td>
-     <td>Testing</td>
-  </tr>
-  <tr>
-    <td><img src="https://github.com/memof90/MovieApp-Swift-Offline-Online-restApi/blob/master/tmdMovie/ScreenApp/Captura%20de%20Pantalla%202021-09-16%20a%20la(s)%203.28.30%20p.%C2%A0m..png?raw=true"></td>
-    <td><img src="https://github.com/memof90/MovieApp-Swift-Offline-Online-restApi/blob/master/tmdMovie/ScreenApp/Captura%20de%20Pantalla%202021-09-16%20a%20la(s)%203.31.34%20p.%C2%A0m..png?raw=true"></td>
-  </tr>
- </table>
+
  
 
-## NEW FREATURES UPComing 
-
-- [ ] Implemeting Videos into App
-- [ ] Create new Better model maybe to LocalDataBase
-- [ ] Create Interface with Figma to create better Interface 
-- [ ] Create more Animations to Views 
-- [x] Animations to View and detailViews
-
-## Example NEW Implementaion 
-
-
-<img src="https://pbs.twimg.com/media/E-URuLaWEAIT8sI?format=jpg&name=medium">
 
 
 
