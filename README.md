@@ -61,14 +61,13 @@ This is a app with Swift, Programatically, RestApi, Generics, CoreData and Allow
   struct ViewCellModel {
     let name : string
   }
+```
 
 
-
-´´´
 
 ## Advanced Coordinates to push ViewController into Views Desing pattern 
-  
-  protocol Coordinator {
+   ```
+      protocol Coordinator {
     var childCoordinators: [Coordinator] { get set }
     var navigationController: UINavigationController { get set }
 
@@ -150,8 +149,10 @@ func createAccount() {
     vc.coordinator = self
     navigationController.pushViewController(vc, animated: true)
 }
-  
-´´´
+ 
+   ```
+
+
 
 
 ## new Implementation UITableViewDiffableDataSource to create tableView
