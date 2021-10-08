@@ -280,7 +280,6 @@
 		8D9316D427065B150074922A = {
 			isa = PBXGroup;
 			children = (
-				8D2E626B2710D3FF00460DDC /* ScreensApp */,
 				8D9316DF27065B150074922A /* AnimeApp */,
 				8D2E62632710C4FD00460DDC /* AnimeAppTests */,
 				8D9316DE27065B150074922A /* Products */,
@@ -301,6 +300,7 @@
 		8D9316DF27065B150074922A /* AnimeApp */ = {
 			isa = PBXGroup;
 			children = (
+				8D2E626B2710D3FF00460DDC /* ScreensApp */,
 				8D9316FE27065C750074922A /* StoryBoard */,
 				8D9316FD27065C040074922A /* Extensions */,
 				8D9316FC27065BFB0074922A /* Services */,
