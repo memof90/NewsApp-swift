@@ -16,7 +16,7 @@ class NetworkServicesModel {
     let session = URLSession(configuration: .default)
     
 //   MARK: - Generics
-    
+    /// next  implement to next release 
     func fetchGenricJSONData<T: Decodable>(url: String ,Completion: @escaping(T?, Error?) -> ()) {
         guard let url = URL(string: url) else {return}
         let task = session.dataTask(with: url) { data, response, err in

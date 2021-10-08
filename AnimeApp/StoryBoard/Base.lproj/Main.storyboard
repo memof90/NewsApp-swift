@@ -49,7 +49,7 @@
                                                             <inset key="sectionInset" minX="30" minY="0.0" maxX="110" maxY="0.0"/>
                                                         </collectionViewFlowLayout>
                                                         <cells>
-                                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="" id="fXy-VH-9P6">
+                                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="TopStoriesCollectionViewCell" id="fXy-VH-9P6">
                                                                 <rect key="frame" x="30" y="0.0" width="128" height="128"/>
                                                                 <autoresizingMask key="autoresizingMask"/>
                                                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="nhX-k8-HXe">
@@ -112,7 +112,7 @@
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         </activityIndicatorView>
                                                         <cells>
-                                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="In9-1a-b3H">
+                                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="BookListCollectionViewCell" id="In9-1a-b3H">
                                                                 <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
                                                                 <autoresizingMask key="autoresizingMask"/>
                                                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="uPj-ty-0Cc">
@@ -189,7 +189,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="r3E-Xm-wiJ">
-                                <rect key="frame" x="47" y="154.5" width="320" height="587.5"/>
+                                <rect key="frame" x="47" y="151.5" width="320" height="593"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="252" image="cala-w6ftFbPCs9I-unsplash" translatesAutoresizingMaskIntoConstraints="NO" id="mb9-4D-u49">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="341"/>
@@ -204,7 +204,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="8QC-ZY-pTU">
-                                        <rect key="frame" x="0.0" y="371" width="320" height="216.5"/>
+                                        <rect key="frame" x="0.0" y="371" width="320" height="222"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="4dN-7h-S42">
                                                 <rect key="frame" x="0.0" y="0.0" width="244" height="31"/>
@@ -255,12 +255,12 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FMJ-7y-vfP">
-                                                <rect key="frame" x="0.0" y="142" width="320" height="74.5"/>
+                                                <rect key="frame" x="0.0" y="142" width="300.5" height="80"/>
                                                 <attributedString key="attributedText">
                                                     <fragment content="Mary Taylor is betting that curious consumers will want well-made bottles, labeled with just the facts.">
                                                         <attributes>
                                                             <color key="NSColor" systemColor="systemGray4Color"/>
-                                                            <font key="NSFont" size="20" name=".SFNS-Regular"/>
+                                                            <font key="NSFont" metaFont="system" size="20"/>
                                                             <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="4" tighteningFactorForTruncation="0.0"/>
                                                         </attributes>
                                                     </fragment>
@@ -433,7 +433,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zlN-bQ-ygQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="37.681159420289859" y="95.758928571428569"/>
+            <point key="canvasLocation" x="32" y="84"/>
         </scene>
     </scenes>
     <resources>

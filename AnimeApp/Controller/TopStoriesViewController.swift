@@ -15,10 +15,14 @@ class TopStoriesViewController: UIViewController, UISearchBarDelegate{
     
     
 //    MARK: - Variables Global
-        var topStories = [TopStoriesViewModel]()
+//        ViewDidModelTopStories
+        var topStoriesViewModel = [TopStoriesViewModel]()
+//    varible to save data to execute filter in the search
         var filteredDataTop : [TopStoriesViewModel] = []
+//     Varible to filter data when filter and when not filter
         var filter = false
-        var allBooks = [BookListsViewModel]()
+//    Varible to ViewModelBooklist
+        var allBooksViewModel = [BookListsViewModel]()
         
     //   MARK: - SearchBar Message to the data not appareance
         fileprivate let searchController = UISearchController(searchResultsController: nil)
@@ -29,7 +33,7 @@ class TopStoriesViewController: UIViewController, UISearchBarDelegate{
             label.font = UIFont.boldSystemFont(ofSize: 20)
             return label
         }()
-    
+//     MARK: - UILabel message  TO RESULTS  value Nil
     fileprivate let notResults: UILabel = {
         let label = UILabel()
         label.text = "Not reuslts"
@@ -67,7 +71,7 @@ class TopStoriesViewController: UIViewController, UISearchBarDelegate{
 //        present search animation
         TopStoriesCollectionView.addSubview(enterSearchTermLabel)
         enterSearchTermLabel.fillSuperview(padding: .init(top: 100, left: 50, bottom: 0, right: 50))
-        
+//        activity indicator when te data loading
         activityIndicatorTop.startAnimating()
         activityIndicatorTop.isHidden = false
         
@@ -84,19 +88,16 @@ class TopStoriesViewController: UIViewController, UISearchBarDelegate{
         }
     
     // MARK: - filter data to search and array
-    
+    ///   variable to timer
     var timer: Timer?
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
          print(searchText)
-//        if searchText.isEmpty == false {
-//            topStories.filter({$0.title.contains(searchText)})
-//        }
+
         timer?.invalidate()
         
         timer = Timer.scheduledTimer(withTimeInterval: 0.5, repeats: false, block: { (_) in
             self.filterContentForSearchText(searchText: searchText)
-    //
             DispatchQueue.main.async {
                 self.TopStoriesCollectionView.reloadData()
             }
@@ -106,14 +107,14 @@ class TopStoriesViewController: UIViewController, UISearchBarDelegate{
     }
     
  
-    
+/// filter data to array to each item
     func filterContentForSearchText(searchText: String, scope: String = "All") {
         if searchText != "" {
-            filteredDataTop = topStories.filter { name in
+            filteredDataTop = topStoriesViewModel.filter { name in
                 return name.title.lowercased().contains(searchText.lowercased())
             }
         } else {
-            self.filteredDataTop = self.topStories
+            self.filteredDataTop = self.topStoriesViewModel
         }
     }
     
@@ -130,7 +131,7 @@ class TopStoriesViewController: UIViewController, UISearchBarDelegate{
     func fetchTopStories() {
         NetworkServicesModel.shared.fetchTopstories { resp, error in
        
-                self.topStories = resp.map({return TopStoriesViewModel(top: $0)})
+                self.topStoriesViewModel = resp.map({return TopStoriesViewModel(top: $0)})
                 DispatchQueue.main.async {
                 self.TopStoriesCollectionView.reloadData()
                 }
@@ -140,7 +141,7 @@ class TopStoriesViewController: UIViewController, UISearchBarDelegate{
     func fetchListBooks() {
         NetworkServicesModel.shared.fetchListBooks { resp, error in
           
-            self.allBooks = resp.map({ return BookListsViewModel(book: $0)})
+            self.allBooksViewModel = resp.map({ return BookListsViewModel(book: $0)})
             
             DispatchQueue.main.async {
                 self.BooksCollectionView.reloadData()
@@ -161,10 +162,10 @@ class TopStoriesViewController: UIViewController, UISearchBarDelegate{
     func collectionViewNumberOfItemsInSection(_ collectionView: UICollectionView) -> Int {
         switch collectionView {
         case TopStoriesCollectionView:
-            enterSearchTermLabel.isHidden = filter ? topStories.count != 0 : filteredDataTop.count != 0
-            return filter ?  topStories.count : filteredDataTop.count
+            enterSearchTermLabel.isHidden = filter ? topStoriesViewModel.count != 0 : filteredDataTop.count != 0
+            return filter ?  topStoriesViewModel.count : filteredDataTop.count
         case BooksCollectionView:
-            return allBooks.count
+            return allBooksViewModel.count
         default:
             return 0
         }
@@ -176,11 +177,11 @@ class TopStoriesViewController: UIViewController, UISearchBarDelegate{
         switch collectionView {
         case TopStoriesCollectionView:
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: TopStoriesCollectionViewCell.identifier, for: indexPath) as! TopStoriesCollectionViewCell
-            cell.setupTopAnimes(top: filter ?  topStories[indexPath.item] : filteredDataTop[indexPath.item])
+            cell.setupTopAnimes(top: filter ?  topStoriesViewModel[indexPath.item] : filteredDataTop[indexPath.item])
             return cell
         case BooksCollectionView:
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: BookListCollectionViewCell.identifier, for: indexPath) as! BookListCollectionViewCell
-            cell.setupBooks(book:  allBooks[indexPath.item])
+            cell.setupBooks(book:  allBooksViewModel[indexPath.item])
             activityIndicatorTop.stopAnimating()
             activityIndicatorTop.isHidden = true
             return cell
@@ -188,20 +189,22 @@ class TopStoriesViewController: UIViewController, UISearchBarDelegate{
             return UICollectionViewCell()
         }
     }
-    
+    //    MARK: - Changes NumberOfItemsInSections of cell depends of section of cell
+    /// custom fuctions to pass diferents data to didSeelectItemAt
+
     func collectionViewDidSelectItemAt(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) -> () {
         switch collectionView {
         case TopStoriesCollectionView:
-            let top = filter ? topStories[indexPath.item] : filteredDataTop[indexPath.item]
+            let top = filter ? topStoriesViewModel[indexPath.item] : filteredDataTop[indexPath.item]
             let controller = DetailTopViewController.instance()
             controller.navigationItem.title = top.title
-            controller.top = filter ? topStories[indexPath.item] : filteredDataTop[indexPath.item]
+            controller.top = filter ? topStoriesViewModel[indexPath.item] : filteredDataTop[indexPath.item]
             navigationController?.pushViewController(controller, animated: true)
         case BooksCollectionView:
-            let books = allBooks[indexPath.item]
+            let books = allBooksViewModel[indexPath.item]
             let controller = DetailBookController.instance()
             controller.navigationItem.title = books.title
-            controller.book = allBooks[indexPath.item]
+            controller.book = allBooksViewModel[indexPath.item]
             navigationController?.pushViewController(controller, animated: true)
         default :
             return ()
@@ -211,13 +214,13 @@ class TopStoriesViewController: UIViewController, UISearchBarDelegate{
 //    MARK: - IBAction
     
     @IBAction func searchActionBtn(_ sender: Any) {
-        
+//            MARK: - function to see searchbar
             setupSearchBar()
     }
     
 }
 
-// MARK: - Extension to TopStories to pass Protocols numberOfItemsInSection, cellForItemAt
+// MARK: - Extension to TopStories to pass Protocols numberOfItemsInSection, cellForItemAt, didSelectItemAt
 
 extension TopStoriesViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
