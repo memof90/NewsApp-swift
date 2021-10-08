@@ -21,6 +21,17 @@ this is a news app with swift
 - [x] funciones personalizadas que permiten la reutilizacion de las vistas sin afectar el performance
 - [x] Genericos 
 
+## Demo App 
+
+<table>
+  <tr>
+    <td>Demo One</td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/memof90/screenProjects/blob/master/AnimateApp/AppVideo/WhatsApp%20Video%202021-10-07%20at%2010.26.42%20PM.gif?raw=true" width=270 height=480></td>
+  </tr>
+ </table>
+
 ## Next Implementation 
 
 ### Bindings to Desing Pattern MVVM Observables 
