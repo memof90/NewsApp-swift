@@ -14,33 +14,6 @@
 		8D14D04D270FE6CE0092CFC1 /* UiViewControllerPresent+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D14D04C270FE6CE0092CFC1 /* UiViewControllerPresent+Extension.swift */; };
 		8D2BFA91270E77A70000A499 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D2BFA90270E77A60000A499 /* UIColor+Extension.swift */; };
 		8D2E62652710C4FD00460DDC /* AnimeAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D2E62642710C4FD00460DDC /* AnimeAppTests.swift */; };
-		8D2E62782710D44500460DDC /* Simulator Screen Shot - iPhone 13 Pro - 2021-10-08 at 14.02.46.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D2E626D2710D44300460DDC /* Simulator Screen Shot - iPhone 13 Pro - 2021-10-08 at 14.02.46.png */; };
-		8D2E62792710D44500460DDC /* Simulator Screen Shot - iPhone 13 Pro - 2021-10-08 at 14.01.41.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D2E626E2710D44400460DDC /* Simulator Screen Shot - iPhone 13 Pro - 2021-10-08 at 14.01.41.png */; };
-		8D2E627A2710D44500460DDC /* Simulator Screen Shot - iPhone 13 Pro - 2021-10-08 at 14.00.57.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D2E626F2710D44400460DDC /* Simulator Screen Shot - iPhone 13 Pro - 2021-10-08 at 14.00.57.png */; };
-		8D2E627B2710D44500460DDC /* Simulator Screen Shot - iPhone 13 Pro - 2021-10-08 at 14.02.16.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D2E62702710D44400460DDC /* Simulator Screen Shot - iPhone 13 Pro - 2021-10-08 at 14.02.16.png */; };
-		8D2E627C2710D44500460DDC /* Simulator Screen Shot - iPhone 13 Pro - 2021-10-08 at 14.02.33.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D2E62712710D44400460DDC /* Simulator Screen Shot - iPhone 13 Pro - 2021-10-08 at 14.02.33.png */; };
-		8D2E627D2710D44500460DDC /* Simulator Screen Shot - iPhone 13 Pro - 2021-10-08 at 14.03.08.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D2E62722710D44400460DDC /* Simulator Screen Shot - iPhone 13 Pro - 2021-10-08 at 14.03.08.png */; };
-		8D2E627E2710D44500460DDC /* Simulator Screen Shot - iPhone 13 Pro - 2021-10-08 at 14.02.05.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D2E62732710D44500460DDC /* Simulator Screen Shot - iPhone 13 Pro - 2021-10-08 at 14.02.05.png */; };
-		8D2E627F2710D44500460DDC /* Simulator Screen Shot - iPhone 13 Pro - 2021-10-08 at 14.01.18.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D2E62742710D44500460DDC /* Simulator Screen Shot - iPhone 13 Pro - 2021-10-08 at 14.01.18.png */; };
-		8D2E62802710D44500460DDC /* Simulator Screen Shot - iPhone 13 Pro - 2021-10-08 at 14.01.36.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D2E62752710D44500460DDC /* Simulator Screen Shot - iPhone 13 Pro - 2021-10-08 at 14.01.36.png */; };
-		8D2E62812710D44500460DDC /* Simulator Screen Shot - iPhone 13 Pro - 2021-10-08 at 14.00.52.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D2E62762710D44500460DDC /* Simulator Screen Shot - iPhone 13 Pro - 2021-10-08 at 14.00.52.png */; };
-		8D2E62822710D44500460DDC /* Simulator Screen Shot - iPhone 13 Pro - 2021-10-08 at 14.02.25.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D2E62772710D44500460DDC /* Simulator Screen Shot - iPhone 13 Pro - 2021-10-08 at 14.02.25.png */; };
-		8D2E628E2710D46C00460DDC /* Captura de Pantalla 2021-10-08 a la(s) 2.00.04 p. m..png in Resources */ = {isa = PBXBuildFile; fileRef = 8D2E62842710D46B00460DDC /* Captura de Pantalla 2021-10-08 a la(s) 2.00.04 p. m..png */; };
-		8D2E628F2710D46C00460DDC /* Captura de Pantalla 2021-10-08 a la(s) 1.48.47 p. m..png in Resources */ = {isa = PBXBuildFile; fileRef = 8D2E62852710D46B00460DDC /* Captura de Pantalla 2021-10-08 a la(s) 1.48.47 p. m..png */; };
-		8D2E62902710D46C00460DDC /* Captura de Pantalla 2021-10-08 a la(s) 1.58.21 p. m..png in Resources */ = {isa = PBXBuildFile; fileRef = 8D2E62862710D46B00460DDC /* Captura de Pantalla 2021-10-08 a la(s) 1.58.21 p. m..png */; };
-		8D2E62912710D46C00460DDC /* Captura de Pantalla 2021-10-08 a la(s) 1.40.32 p. m..png in Resources */ = {isa = PBXBuildFile; fileRef = 8D2E62872710D46B00460DDC /* Captura de Pantalla 2021-10-08 a la(s) 1.40.32 p. m..png */; };
-		8D2E62922710D46C00460DDC /* Captura de Pantalla 2021-10-08 a la(s) 1.59.13 p. m..png in Resources */ = {isa = PBXBuildFile; fileRef = 8D2E62882710D46B00460DDC /* Captura de Pantalla 2021-10-08 a la(s) 1.59.13 p. m..png */; };
-		8D2E62932710D46C00460DDC /* Captura de Pantalla 2021-10-08 a la(s) 1.59.49 p. m..png in Resources */ = {isa = PBXBuildFile; fileRef = 8D2E62892710D46B00460DDC /* Captura de Pantalla 2021-10-08 a la(s) 1.59.49 p. m..png */; };
-		8D2E62942710D46C00460DDC /* Captura de Pantalla 2021-10-08 a la(s) 1.46.12 p. m..png in Resources */ = {isa = PBXBuildFile; fileRef = 8D2E628A2710D46C00460DDC /* Captura de Pantalla 2021-10-08 a la(s) 1.46.12 p. m..png */; };
-		8D2E62952710D46C00460DDC /* Captura de Pantalla 2021-10-08 a la(s) 1.58.43 p. m..png in Resources */ = {isa = PBXBuildFile; fileRef = 8D2E628B2710D46C00460DDC /* Captura de Pantalla 2021-10-08 a la(s) 1.58.43 p. m..png */; };
-		8D2E62962710D46C00460DDC /* Captura de Pantalla 2021-10-08 a la(s) 2.00.25 p. m..png in Resources */ = {isa = PBXBuildFile; fileRef = 8D2E628C2710D46C00460DDC /* Captura de Pantalla 2021-10-08 a la(s) 2.00.25 p. m..png */; };
-		8D2E62972710D46C00460DDC /* Captura de Pantalla 2021-10-08 a la(s) 1.59.33 p. m..png in Resources */ = {isa = PBXBuildFile; fileRef = 8D2E628D2710D46C00460DDC /* Captura de Pantalla 2021-10-08 a la(s) 1.59.33 p. m..png */; };
-		8D2E629B2710D48400460DDC /* Captura de Pantalla 2021-10-08 a la(s) 1.57.24 p. m..png in Resources */ = {isa = PBXBuildFile; fileRef = 8D2E62992710D48400460DDC /* Captura de Pantalla 2021-10-08 a la(s) 1.57.24 p. m..png */; };
-		8D2E629C2710D48400460DDC /* Captura de Pantalla 2021-10-08 a la(s) 1.57.43 p. m..png in Resources */ = {isa = PBXBuildFile; fileRef = 8D2E629A2710D48400460DDC /* Captura de Pantalla 2021-10-08 a la(s) 1.57.43 p. m..png */; };
-		8D2E62A12710D49B00460DDC /* Captura de Pantalla 2021-10-08 a la(s) 1.56.53 p. m..png in Resources */ = {isa = PBXBuildFile; fileRef = 8D2E629E2710D49B00460DDC /* Captura de Pantalla 2021-10-08 a la(s) 1.56.53 p. m..png */; };
-		8D2E62A22710D49B00460DDC /* Captura de Pantalla 2021-10-08 a la(s) 1.57.43 p. m..png in Resources */ = {isa = PBXBuildFile; fileRef = 8D2E629F2710D49B00460DDC /* Captura de Pantalla 2021-10-08 a la(s) 1.57.43 p. m..png */; };
-		8D2E62A32710D49B00460DDC /* Captura de Pantalla 2021-10-08 a la(s) 1.57.24 p. m..png in Resources */ = {isa = PBXBuildFile; fileRef = 8D2E62A02710D49B00460DDC /* Captura de Pantalla 2021-10-08 a la(s) 1.57.24 p. m..png */; };
-		8D2E62A62710D4AD00460DDC /* WhatsApp Video 2021-10-07 at 10.26.42 PM.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8D2E62A52710D4AD00460DDC /* WhatsApp Video 2021-10-07 at 10.26.42 PM.gif */; };
 		8D9316E127065B150074922A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9316E027065B150074922A /* AppDelegate.swift */; };
 		8D9316E327065B150074922A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9316E227065B150074922A /* SceneDelegate.swift */; };
 		8D9316E827065B150074922A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D9316E627065B150074922A /* Main.storyboard */; };
@@ -83,33 +56,6 @@
 		8D2BFA90270E77A60000A499 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		8D2E62622710C4FD00460DDC /* AnimeAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnimeAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D2E62642710C4FD00460DDC /* AnimeAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeAppTests.swift; sourceTree = "<group>"; };
-		8D2E626D2710D44300460DDC /* Simulator Screen Shot - iPhone 13 Pro - 2021-10-08 at 14.02.46.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Simulator Screen Shot - iPhone 13 Pro - 2021-10-08 at 14.02.46.png"; sourceTree = "<group>"; };
-		8D2E626E2710D44400460DDC /* Simulator Screen Shot - iPhone 13 Pro - 2021-10-08 at 14.01.41.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Simulator Screen Shot - iPhone 13 Pro - 2021-10-08 at 14.01.41.png"; sourceTree = "<group>"; };
-		8D2E626F2710D44400460DDC /* Simulator Screen Shot - iPhone 13 Pro - 2021-10-08 at 14.00.57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Simulator Screen Shot - iPhone 13 Pro - 2021-10-08 at 14.00.57.png"; sourceTree = "<group>"; };
-		8D2E62702710D44400460DDC /* Simulator Screen Shot - iPhone 13 Pro - 2021-10-08 at 14.02.16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Simulator Screen Shot - iPhone 13 Pro - 2021-10-08 at 14.02.16.png"; sourceTree = "<group>"; };
-		8D2E62712710D44400460DDC /* Simulator Screen Shot - iPhone 13 Pro - 2021-10-08 at 14.02.33.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Simulator Screen Shot - iPhone 13 Pro - 2021-10-08 at 14.02.33.png"; sourceTree = "<group>"; };
-		8D2E62722710D44400460DDC /* Simulator Screen Shot - iPhone 13 Pro - 2021-10-08 at 14.03.08.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Simulator Screen Shot - iPhone 13 Pro - 2021-10-08 at 14.03.08.png"; sourceTree = "<group>"; };
-		8D2E62732710D44500460DDC /* Simulator Screen Shot - iPhone 13 Pro - 2021-10-08 at 14.02.05.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Simulator Screen Shot - iPhone 13 Pro - 2021-10-08 at 14.02.05.png"; sourceTree = "<group>"; };
-		8D2E62742710D44500460DDC /* Simulator Screen Shot - iPhone 13 Pro - 2021-10-08 at 14.01.18.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Simulator Screen Shot - iPhone 13 Pro - 2021-10-08 at 14.01.18.png"; sourceTree = "<group>"; };
-		8D2E62752710D44500460DDC /* Simulator Screen Shot - iPhone 13 Pro - 2021-10-08 at 14.01.36.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Simulator Screen Shot - iPhone 13 Pro - 2021-10-08 at 14.01.36.png"; sourceTree = "<group>"; };
-		8D2E62762710D44500460DDC /* Simulator Screen Shot - iPhone 13 Pro - 2021-10-08 at 14.00.52.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Simulator Screen Shot - iPhone 13 Pro - 2021-10-08 at 14.00.52.png"; sourceTree = "<group>"; };
-		8D2E62772710D44500460DDC /* Simulator Screen Shot - iPhone 13 Pro - 2021-10-08 at 14.02.25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Simulator Screen Shot - iPhone 13 Pro - 2021-10-08 at 14.02.25.png"; sourceTree = "<group>"; };
-		8D2E62842710D46B00460DDC /* Captura de Pantalla 2021-10-08 a la(s) 2.00.04 p. m..png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Captura de Pantalla 2021-10-08 a la(s) 2.00.04 p. m..png"; sourceTree = "<group>"; };
-		8D2E62852710D46B00460DDC /* Captura de Pantalla 2021-10-08 a la(s) 1.48.47 p. m..png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Captura de Pantalla 2021-10-08 a la(s) 1.48.47 p. m..png"; sourceTree = "<group>"; };
-		8D2E62862710D46B00460DDC /* Captura de Pantalla 2021-10-08 a la(s) 1.58.21 p. m..png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Captura de Pantalla 2021-10-08 a la(s) 1.58.21 p. m..png"; sourceTree = "<group>"; };
-		8D2E62872710D46B00460DDC /* Captura de Pantalla 2021-10-08 a la(s) 1.40.32 p. m..png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Captura de Pantalla 2021-10-08 a la(s) 1.40.32 p. m..png"; sourceTree = "<group>"; };
-		8D2E62882710D46B00460DDC /* Captura de Pantalla 2021-10-08 a la(s) 1.59.13 p. m..png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Captura de Pantalla 2021-10-08 a la(s) 1.59.13 p. m..png"; sourceTree = "<group>"; };
-		8D2E62892710D46B00460DDC /* Captura de Pantalla 2021-10-08 a la(s) 1.59.49 p. m..png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Captura de Pantalla 2021-10-08 a la(s) 1.59.49 p. m..png"; sourceTree = "<group>"; };
-		8D2E628A2710D46C00460DDC /* Captura de Pantalla 2021-10-08 a la(s) 1.46.12 p. m..png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Captura de Pantalla 2021-10-08 a la(s) 1.46.12 p. m..png"; sourceTree = "<group>"; };
-		8D2E628B2710D46C00460DDC /* Captura de Pantalla 2021-10-08 a la(s) 1.58.43 p. m..png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Captura de Pantalla 2021-10-08 a la(s) 1.58.43 p. m..png"; sourceTree = "<group>"; };
-		8D2E628C2710D46C00460DDC /* Captura de Pantalla 2021-10-08 a la(s) 2.00.25 p. m..png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Captura de Pantalla 2021-10-08 a la(s) 2.00.25 p. m..png"; sourceTree = "<group>"; };
-		8D2E628D2710D46C00460DDC /* Captura de Pantalla 2021-10-08 a la(s) 1.59.33 p. m..png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Captura de Pantalla 2021-10-08 a la(s) 1.59.33 p. m..png"; sourceTree = "<group>"; };
-		8D2E62992710D48400460DDC /* Captura de Pantalla 2021-10-08 a la(s) 1.57.24 p. m..png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Captura de Pantalla 2021-10-08 a la(s) 1.57.24 p. m..png"; sourceTree = "<group>"; };
-		8D2E629A2710D48400460DDC /* Captura de Pantalla 2021-10-08 a la(s) 1.57.43 p. m..png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Captura de Pantalla 2021-10-08 a la(s) 1.57.43 p. m..png"; sourceTree = "<group>"; };
-		8D2E629E2710D49B00460DDC /* Captura de Pantalla 2021-10-08 a la(s) 1.56.53 p. m..png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Captura de Pantalla 2021-10-08 a la(s) 1.56.53 p. m..png"; sourceTree = "<group>"; };
-		8D2E629F2710D49B00460DDC /* Captura de Pantalla 2021-10-08 a la(s) 1.57.43 p. m..png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Captura de Pantalla 2021-10-08 a la(s) 1.57.43 p. m..png"; sourceTree = "<group>"; };
-		8D2E62A02710D49B00460DDC /* Captura de Pantalla 2021-10-08 a la(s) 1.57.24 p. m..png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Captura de Pantalla 2021-10-08 a la(s) 1.57.24 p. m..png"; sourceTree = "<group>"; };
-		8D2E62A52710D4AD00460DDC /* WhatsApp Video 2021-10-07 at 10.26.42 PM.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "WhatsApp Video 2021-10-07 at 10.26.42 PM.gif"; sourceTree = "<group>"; };
 		8D9316DD27065B150074922A /* AnimeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D9316E027065B150074922A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8D9316E227065B150074922A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -203,80 +149,6 @@
 			path = AnimeAppTests;
 			sourceTree = "<group>";
 		};
-		8D2E626B2710D3FF00460DDC /* ScreensApp */ = {
-			isa = PBXGroup;
-			children = (
-				8D2E62A42710D49F00460DDC /* Video */,
-				8D2E629D2710D48800460DDC /* storyboard */,
-				8D2E62982710D47100460DDC /* nibs */,
-				8D2E62832710D44D00460DDC /* ScreenProjects */,
-				8D2E626C2710D42400460DDC /* appScreen */,
-			);
-			path = ScreensApp;
-			sourceTree = "<group>";
-		};
-		8D2E626C2710D42400460DDC /* appScreen */ = {
-			isa = PBXGroup;
-			children = (
-				8D2E62762710D44500460DDC /* Simulator Screen Shot - iPhone 13 Pro - 2021-10-08 at 14.00.52.png */,
-				8D2E626F2710D44400460DDC /* Simulator Screen Shot - iPhone 13 Pro - 2021-10-08 at 14.00.57.png */,
-				8D2E62742710D44500460DDC /* Simulator Screen Shot - iPhone 13 Pro - 2021-10-08 at 14.01.18.png */,
-				8D2E62752710D44500460DDC /* Simulator Screen Shot - iPhone 13 Pro - 2021-10-08 at 14.01.36.png */,
-				8D2E626E2710D44400460DDC /* Simulator Screen Shot - iPhone 13 Pro - 2021-10-08 at 14.01.41.png */,
-				8D2E62732710D44500460DDC /* Simulator Screen Shot - iPhone 13 Pro - 2021-10-08 at 14.02.05.png */,
-				8D2E62702710D44400460DDC /* Simulator Screen Shot - iPhone 13 Pro - 2021-10-08 at 14.02.16.png */,
-				8D2E62772710D44500460DDC /* Simulator Screen Shot - iPhone 13 Pro - 2021-10-08 at 14.02.25.png */,
-				8D2E62712710D44400460DDC /* Simulator Screen Shot - iPhone 13 Pro - 2021-10-08 at 14.02.33.png */,
-				8D2E626D2710D44300460DDC /* Simulator Screen Shot - iPhone 13 Pro - 2021-10-08 at 14.02.46.png */,
-				8D2E62722710D44400460DDC /* Simulator Screen Shot - iPhone 13 Pro - 2021-10-08 at 14.03.08.png */,
-			);
-			path = appScreen;
-			sourceTree = "<group>";
-		};
-		8D2E62832710D44D00460DDC /* ScreenProjects */ = {
-			isa = PBXGroup;
-			children = (
-				8D2E62872710D46B00460DDC /* Captura de Pantalla 2021-10-08 a la(s) 1.40.32 p. m..png */,
-				8D2E628A2710D46C00460DDC /* Captura de Pantalla 2021-10-08 a la(s) 1.46.12 p. m..png */,
-				8D2E62852710D46B00460DDC /* Captura de Pantalla 2021-10-08 a la(s) 1.48.47 p. m..png */,
-				8D2E62862710D46B00460DDC /* Captura de Pantalla 2021-10-08 a la(s) 1.58.21 p. m..png */,
-				8D2E628B2710D46C00460DDC /* Captura de Pantalla 2021-10-08 a la(s) 1.58.43 p. m..png */,
-				8D2E62882710D46B00460DDC /* Captura de Pantalla 2021-10-08 a la(s) 1.59.13 p. m..png */,
-				8D2E628D2710D46C00460DDC /* Captura de Pantalla 2021-10-08 a la(s) 1.59.33 p. m..png */,
-				8D2E62892710D46B00460DDC /* Captura de Pantalla 2021-10-08 a la(s) 1.59.49 p. m..png */,
-				8D2E62842710D46B00460DDC /* Captura de Pantalla 2021-10-08 a la(s) 2.00.04 p. m..png */,
-				8D2E628C2710D46C00460DDC /* Captura de Pantalla 2021-10-08 a la(s) 2.00.25 p. m..png */,
-			);
-			path = ScreenProjects;
-			sourceTree = "<group>";
-		};
-		8D2E62982710D47100460DDC /* nibs */ = {
-			isa = PBXGroup;
-			children = (
-				8D2E62992710D48400460DDC /* Captura de Pantalla 2021-10-08 a la(s) 1.57.24 p. m..png */,
-				8D2E629A2710D48400460DDC /* Captura de Pantalla 2021-10-08 a la(s) 1.57.43 p. m..png */,
-			);
-			path = nibs;
-			sourceTree = "<group>";
-		};
-		8D2E629D2710D48800460DDC /* storyboard */ = {
-			isa = PBXGroup;
-			children = (
-				8D2E629E2710D49B00460DDC /* Captura de Pantalla 2021-10-08 a la(s) 1.56.53 p. m..png */,
-				8D2E62A02710D49B00460DDC /* Captura de Pantalla 2021-10-08 a la(s) 1.57.24 p. m..png */,
-				8D2E629F2710D49B00460DDC /* Captura de Pantalla 2021-10-08 a la(s) 1.57.43 p. m..png */,
-			);
-			path = storyboard;
-			sourceTree = "<group>";
-		};
-		8D2E62A42710D49F00460DDC /* Video */ = {
-			isa = PBXGroup;
-			children = (
-				8D2E62A52710D4AD00460DDC /* WhatsApp Video 2021-10-07 at 10.26.42 PM.gif */,
-			);
-			path = Video;
-			sourceTree = "<group>";
-		};
 		8D9316D427065B150074922A = {
 			isa = PBXGroup;
 			children = (
@@ -300,7 +172,6 @@
 		8D9316DF27065B150074922A /* AnimeApp */ = {
 			isa = PBXGroup;
 			children = (
-				8D2E626B2710D3FF00460DDC /* ScreensApp */,
 				8D9316FE27065C750074922A /* StoryBoard */,
 				8D9316FD27065C040074922A /* Extensions */,
 				8D9316FC27065BFB0074922A /* Services */,
@@ -541,37 +412,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D2E629C2710D48400460DDC /* Captura de Pantalla 2021-10-08 a la(s) 1.57.43 p. m..png in Resources */,
-				8D2E62812710D44500460DDC /* Simulator Screen Shot - iPhone 13 Pro - 2021-10-08 at 14.00.52.png in Resources */,
-				8D2E627F2710D44500460DDC /* Simulator Screen Shot - iPhone 13 Pro - 2021-10-08 at 14.01.18.png in Resources */,
-				8D2E62912710D46C00460DDC /* Captura de Pantalla 2021-10-08 a la(s) 1.40.32 p. m..png in Resources */,
 				8D9316F027065B180074922A /* LaunchScreen.storyboard in Resources */,
-				8D2E62932710D46C00460DDC /* Captura de Pantalla 2021-10-08 a la(s) 1.59.49 p. m..png in Resources */,
-				8D2E62972710D46C00460DDC /* Captura de Pantalla 2021-10-08 a la(s) 1.59.33 p. m..png in Resources */,
-				8D2E62A12710D49B00460DDC /* Captura de Pantalla 2021-10-08 a la(s) 1.56.53 p. m..png in Resources */,
-				8D2E627B2710D44500460DDC /* Simulator Screen Shot - iPhone 13 Pro - 2021-10-08 at 14.02.16.png in Resources */,
-				8D2E62802710D44500460DDC /* Simulator Screen Shot - iPhone 13 Pro - 2021-10-08 at 14.01.36.png in Resources */,
-				8D2E629B2710D48400460DDC /* Captura de Pantalla 2021-10-08 a la(s) 1.57.24 p. m..png in Resources */,
-				8D2E62902710D46C00460DDC /* Captura de Pantalla 2021-10-08 a la(s) 1.58.21 p. m..png in Resources */,
-				8D2E62782710D44500460DDC /* Simulator Screen Shot - iPhone 13 Pro - 2021-10-08 at 14.02.46.png in Resources */,
 				8D9316ED27065B180074922A /* Assets.xcassets in Resources */,
-				8D2E62962710D46C00460DDC /* Captura de Pantalla 2021-10-08 a la(s) 2.00.25 p. m..png in Resources */,
-				8D2E628E2710D46C00460DDC /* Captura de Pantalla 2021-10-08 a la(s) 2.00.04 p. m..png in Resources */,
-				8D2E62A22710D49B00460DDC /* Captura de Pantalla 2021-10-08 a la(s) 1.57.43 p. m..png in Resources */,
-				8D2E62922710D46C00460DDC /* Captura de Pantalla 2021-10-08 a la(s) 1.59.13 p. m..png in Resources */,
-				8D2E627A2710D44500460DDC /* Simulator Screen Shot - iPhone 13 Pro - 2021-10-08 at 14.00.57.png in Resources */,
-				8D2E62A62710D4AD00460DDC /* WhatsApp Video 2021-10-07 at 10.26.42 PM.gif in Resources */,
-				8D2E62952710D46C00460DDC /* Captura de Pantalla 2021-10-08 a la(s) 1.58.43 p. m..png in Resources */,
-				8D2E627D2710D44500460DDC /* Simulator Screen Shot - iPhone 13 Pro - 2021-10-08 at 14.03.08.png in Resources */,
-				8D2E627C2710D44500460DDC /* Simulator Screen Shot - iPhone 13 Pro - 2021-10-08 at 14.02.33.png in Resources */,
-				8D2E62A32710D49B00460DDC /* Captura de Pantalla 2021-10-08 a la(s) 1.57.24 p. m..png in Resources */,
-				8D2E62792710D44500460DDC /* Simulator Screen Shot - iPhone 13 Pro - 2021-10-08 at 14.01.41.png in Resources */,
-				8D2E62942710D46C00460DDC /* Captura de Pantalla 2021-10-08 a la(s) 1.46.12 p. m..png in Resources */,
 				8D9316E827065B150074922A /* Main.storyboard in Resources */,
-				8D2E62822710D44500460DDC /* Simulator Screen Shot - iPhone 13 Pro - 2021-10-08 at 14.02.25.png in Resources */,
-				8D2E628F2710D46C00460DDC /* Captura de Pantalla 2021-10-08 a la(s) 1.48.47 p. m..png in Resources */,
 				8DE1A711270E212A000D44FD /* BookListCollectionViewCell.xib in Resources */,
-				8D2E627E2710D44500460DDC /* Simulator Screen Shot - iPhone 13 Pro - 2021-10-08 at 14.02.05.png in Resources */,
 				8D93170527066C680074922A /* TopStoriesCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
