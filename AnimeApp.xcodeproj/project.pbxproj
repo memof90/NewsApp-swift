@@ -93,12 +93,12 @@
 			path = FillSuperview;
 			sourceTree = "<group>";
 		};
-		8D14D043270FAB3F0092CFC1 /* DetailController */ = {
+		8D14D043270FAB3F0092CFC1 /* DetailTopController */ = {
 			isa = PBXGroup;
 			children = (
 				8D14D044270FAB590092CFC1 /* DetailTopViewController.swift */,
 			);
-			path = DetailController;
+			path = DetailTopController;
 			sourceTree = "<group>";
 		};
 		8D9316D427065B150074922A = {
@@ -159,7 +159,7 @@
 		8D9316F927065B6E0074922A /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				8D14D043270FAB3F0092CFC1 /* DetailController */,
+				8D14D043270FAB3F0092CFC1 /* DetailTopController */,
 				8D9316FF27065EC10074922A /* TopStoriesViewController.swift */,
 			);
 			path = Controller;
