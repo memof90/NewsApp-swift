@@ -1,8 +1,6 @@
 # NewsApp-swift
 this is a news app with swift 
 
-## How To use This app
-
 ## Entregables 
 
 - [x] List top Top Stories
@@ -182,6 +180,8 @@ dataSource = UITableViewDiffableDataSource<Int, UUID>(tableView: tableView) {
     <td><img src="https://github.com/memof90/screenProjects/blob/master/AnimateApp/AppVideo/WhatsApp%20Video%202021-10-07%20at%2010.26.42%20PM.gif?raw=true" width=270 height=480></td>
   </tr>
  </table>
+ 
+ ## How To use This app
 
 - Go to the folder AnimeApp and install Pods to project 
 
