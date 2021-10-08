@@ -57,4 +57,10 @@ class DetailTopViewController: UIViewController {
         
         
     }
+    
+//     MARK: - dismiss
+    
+    @IBAction func leaveBtn(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
 }

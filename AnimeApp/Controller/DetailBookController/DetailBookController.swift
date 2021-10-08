@@ -63,6 +63,11 @@ class DetailBookController: UIViewController {
         
     }
     
+//    MARK: - Actions
+    
+    @IBAction func leaveBtn(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
     
     
 }

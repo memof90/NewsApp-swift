@@ -11,6 +11,7 @@
 		8D14D045270FAB590092CFC1 /* DetailTopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D14D044270FAB590092CFC1 /* DetailTopViewController.swift */; };
 		8D14D047270FB90D0092CFC1 /* UIVIewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D14D046270FB90D0092CFC1 /* UIVIewController+Extension.swift */; };
 		8D14D04A270FCAAF0092CFC1 /* DetailBookController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D14D049270FCAAF0092CFC1 /* DetailBookController.swift */; };
+		8D14D04D270FE6CE0092CFC1 /* UiViewControllerPresent+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D14D04C270FE6CE0092CFC1 /* UiViewControllerPresent+Extension.swift */; };
 		8D2BFA91270E77A70000A499 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D2BFA90270E77A60000A499 /* UIColor+Extension.swift */; };
 		8D9316E127065B150074922A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9316E027065B150074922A /* AppDelegate.swift */; };
 		8D9316E327065B150074922A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9316E227065B150074922A /* SceneDelegate.swift */; };
@@ -40,6 +41,7 @@
 		8D14D044270FAB590092CFC1 /* DetailTopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTopViewController.swift; sourceTree = "<group>"; };
 		8D14D046270FB90D0092CFC1 /* UIVIewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIVIewController+Extension.swift"; sourceTree = "<group>"; };
 		8D14D049270FCAAF0092CFC1 /* DetailBookController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailBookController.swift; sourceTree = "<group>"; };
+		8D14D04C270FE6CE0092CFC1 /* UiViewControllerPresent+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UiViewControllerPresent+Extension.swift"; sourceTree = "<group>"; };
 		8D2BFA90270E77A60000A499 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		8D9316DD27065B150074922A /* AnimeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D9316E027065B150074922A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -109,6 +111,14 @@
 				8D14D049270FCAAF0092CFC1 /* DetailBookController.swift */,
 			);
 			path = DetailBookController;
+			sourceTree = "<group>";
+		};
+		8D14D04B270FE6AA0092CFC1 /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				8D14D04C270FE6CE0092CFC1 /* UiViewControllerPresent+Extension.swift */,
+			);
+			path = Animation;
 			sourceTree = "<group>";
 		};
 		8D9316D427065B150074922A = {
@@ -197,6 +207,7 @@
 		8D9316FD27065C040074922A /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				8D14D04B270FE6AA0092CFC1 /* Animation */,
 				8D14D040270F70750092CFC1 /* FillSuperview */,
 				8D93170627066CD40074922A /* UIView+Extension.swift */,
 				8D93170D270678360074922A /* String+Extension.swift */,
@@ -402,6 +413,7 @@
 				8D14D045270FAB590092CFC1 /* DetailTopViewController.swift in Sources */,
 				8D93170727066CD40074922A /* UIView+Extension.swift in Sources */,
 				8D93170E270678360074922A /* String+Extension.swift in Sources */,
+				8D14D04D270FE6CE0092CFC1 /* UiViewControllerPresent+Extension.swift in Sources */,
 				8D14D04A270FCAAF0092CFC1 /* DetailBookController.swift in Sources */,
 				8D93171527067C4B0074922A /* TopStoriesViewModel.swift in Sources */,
 				8D9316EB27065B150074922A /* AnimeApp.xcdatamodeld in Sources */,
